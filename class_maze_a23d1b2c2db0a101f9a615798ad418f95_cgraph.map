@@ -1,0 +1,15 @@
+<map id="Maze::getDestinationCell" name="Maze::getDestinationCell">
+<area shape="rect" id="node2" href="$class_maze.html#a9a4d23ca9b21b943d76fe1c403f934e0" title="placeWall &#45; puts the &quot;dir&quot; wall at location x, y Does nothing if there is already a wall there ..." alt="" coords="252,44,371,71"/>
+<area shape="rect" id="node3" href="$class_maze.html#af451c9c7143883ca8a68c8dd2975a9b5" title="adjacentCell &#45; get the coordinates of the cell to the NSWE of given cell " alt="" coords="465,44,599,71"/>
+<area shape="rect" id="node5" href="$class_maze.html#a8f624171682abf4d0b18c24bf3e9620f" title="removeWall &#45; removes the &quot;dir&quot; wall from location x, y Does nothing if there is no wall ..." alt="" coords="247,95,376,122"/>
+<area shape="rect" id="node6" href="$class_maze.html#a4e5c65f25f273c6403fc17ad0bc85f59" title="isWall &#45; checks whether there is a &quot;dir&quot; wall at location x, y " alt="" coords="262,146,361,172"/>
+<area shape="rect" id="node7" href="$class_maze.html#a0e456da6989de605f4bedad3c1d1be14" title="getNeighboringCells &#45; get a list of reachable (no wall) adjacent cells " alt="" coords="223,196,400,223"/>
+<area shape="rect" id="node8" href="$class_maze.html#a0e8f64de3332f4799f4044ee18fa2038" title="getDirectionBetweenCells get the Cardinal direction between 2 cells The cells must be 1 cell apart..." alt="" coords="221,248,402,289"/>
+<area shape="rect" id="node9" href="$class_maze.html#a74f85fc2c87e4ac956b92286cf81cefb" title="hasMouseVisited &#45; checks if the mouse has visited x, y " alt="" coords="451,339,613,366"/>
+<area shape="rect" id="node10" href="$class_maze.html#afc4ab87a6298915e6aba874647b7bd6a" title="setMouseVisited &#45; mark cell x, y as visited by the mouse " alt="" coords="232,364,391,391"/>
+<area shape="rect" id="node11" href="$class_maze.html#abe91e9005ae12a9351e364a355aefbf0" title="hasTraversalVisited &#45; checks if the maze solve has seen cell x, y " alt="" coords="224,415,399,442"/>
+<area shape="rect" id="node12" href="$class_maze.html#a92e20614a8fed75753c3eb9225df1953" title="setTraversalVisited &#45; mark cell x,y as seen by the maze solver " alt="" coords="226,466,397,492"/>
+<area shape="rect" id="node13" href="$class_maze.html#a7bf44565b5492846b14bfcf3ca344d38" title="resetTraversalVisited &#45; mark all cells as not visited by maze solver " alt="" coords="220,516,403,543"/>
+<area shape="rect" id="node14" href="$class_maze.html#a8c5e8a0772958f7d369580317ae1c1b0" title="isMazeMapped " alt="" coords="236,567,387,594"/>
+<area shape="rect" id="node4" href="$cardinal8_8h.html#a432604348268c9de2fb4902f1eff6ca9" title="oppositeDirection" alt="" coords="471,95,593,122"/>
+</map>

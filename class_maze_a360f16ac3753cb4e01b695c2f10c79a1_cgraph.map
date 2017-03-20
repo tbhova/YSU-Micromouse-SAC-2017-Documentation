@@ -1,0 +1,5 @@
+<map id="Maze::Maze" name="Maze::Maze">
+<area shape="rect" id="node2" href="$class_maze.html#a9a4d23ca9b21b943d76fe1c403f934e0" title="placeWall &#45; puts the &quot;dir&quot; wall at location x, y Does nothing if there is already a wall there ..." alt="" coords="148,31,267,57"/>
+<area shape="rect" id="node3" href="$class_maze.html#af451c9c7143883ca8a68c8dd2975a9b5" title="adjacentCell &#45; get the coordinates of the cell to the NSWE of given cell " alt="" coords="315,5,448,32"/>
+<area shape="rect" id="node4" href="$cardinal8_8h.html#a432604348268c9de2fb4902f1eff6ca9" title="oppositeDirection" alt="" coords="320,56,443,83"/>
+</map>

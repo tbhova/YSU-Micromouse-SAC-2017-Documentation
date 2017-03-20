@@ -81,11 +81,15 @@ $(document).ready(function(){initNavTree('class_breadth_first_g_p_s.html','');})
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="class_breadth_first_g_p_s-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">BreadthFirstGPS Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="breadthfirstgps_8h_source.html">breadthfirstgps.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for BreadthFirstGPS:</div>
 <div class="dyncontent">
@@ -106,24 +110,370 @@ Collaboration diagram for BreadthFirstGPS:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ade5e1916b9ff23105a4dd67cf438b81f"><td class="memItemLeft" align="right" valign="top"><a id="ade5e1916b9ff23105a4dd67cf438b81f"></a>
-virtual Cardinal8&#160;</td><td class="memItemRight" valign="bottom"><b>nextDirection</b> ()</td></tr>
-<tr class="separator:ade5e1916b9ff23105a4dd67cf438b81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8061fbca0799f6d73a326512541cd4d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_breadth_first_g_p_s.html#ac8061fbca0799f6d73a326512541cd4d">BreadthFirstGPS</a> (<a class="el" href="class_maze.html">Maze</a> *<a class="el" href="class_g_p_s.html#a6ec122f44f190c63191d6901a57c597d">maze</a>)</td></tr>
+<tr class="separator:ac8061fbca0799f6d73a326512541cd4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9696cdc41b6cab4adc8ee689ed56546e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_breadth_first_g_p_s.html#a9696cdc41b6cab4adc8ee689ed56546e">~BreadthFirstGPS</a> ()</td></tr>
+<tr class="separator:a9696cdc41b6cab4adc8ee689ed56546e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ca618ed6adf5b7fc5912e3984d0906c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_breadth_first_g_p_s.html#a2ca618ed6adf5b7fc5912e3984d0906c">getDirectionTo</a> (const <a class="el" href="struct_coordinate.html">Coordinate</a> start, const <a class="el" href="struct_coordinate.html">Coordinate</a> destination)</td></tr>
+<tr class="memdesc:a2ca618ed6adf5b7fc5912e3984d0906c"><td class="mdescLeft">&#160;</td><td class="mdescRight">nextDirection - Request the directions from current cell to New Cell  <a href="#a2ca618ed6adf5b7fc5912e3984d0906c">More...</a><br /></td></tr>
+<tr class="separator:a2ca618ed6adf5b7fc5912e3984d0906c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2ef67ba04197477b4f156213f9fa34f"><td class="memItemLeft" align="right" valign="top">virtual std::stack&lt; <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_breadth_first_g_p_s.html#aa2ef67ba04197477b4f156213f9fa34f">fullPath</a> (const <a class="el" href="struct_coordinate.html">Coordinate</a> start, const <a class="el" href="struct_coordinate.html">Coordinate</a> destination)</td></tr>
+<tr class="separator:aa2ef67ba04197477b4f156213f9fa34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_g_p_s"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_g_p_s')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_g_p_s.html">GPS</a></td></tr>
-<tr class="memitem:a2b3e0ce57a2142efadf26e7c3baefc77 inherit pub_methods_class_g_p_s"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_s.html#a2b3e0ce57a2142efadf26e7c3baefc77">askForDirectionToXY</a> (<a class="el" href="struct_coordinate.html">Coordinate</a> cell, <a class="el" href="struct_coordinate.html">Coordinate</a> cell)</td></tr>
-<tr class="memdesc:a2b3e0ce57a2142efadf26e7c3baefc77 inherit pub_methods_class_g_p_s"><td class="mdescLeft">&#160;</td><td class="mdescRight">askForDirectionToXY - Request the directions from current cell to New Cell  <a href="class_g_p_s.html#a2b3e0ce57a2142efadf26e7c3baefc77">More...</a><br /></td></tr>
-<tr class="separator:a2b3e0ce57a2142efadf26e7c3baefc77 inherit pub_methods_class_g_p_s"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e4d47e716554a64d6e09db3136d4ded inherit pub_methods_class_g_p_s"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_s.html#a1e4d47e716554a64d6e09db3136d4ded">GPS</a> (<a class="el" href="class_maze.html">Maze</a> *<a class="el" href="class_g_p_s.html#a6ec122f44f190c63191d6901a57c597d">maze</a>)</td></tr>
+<tr class="separator:a1e4d47e716554a64d6e09db3136d4ded inherit pub_methods_class_g_p_s"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b854e815a4c404e97b4ecb318b1529a inherit pub_methods_class_g_p_s"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_s.html#a8b854e815a4c404e97b4ecb318b1529a">~GPS</a> ()</td></tr>
+<tr class="separator:a8b854e815a4c404e97b4ecb318b1529a inherit pub_methods_class_g_p_s"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a853bec4fe3921cdf2c6c8f0d38bfc983"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_breadth_first_g_p_s.html#a853bec4fe3921cdf2c6c8f0d38bfc983">search</a> (const <a class="el" href="struct_coordinate.html">Coordinate</a> current, const <a class="el" href="struct_coordinate.html">Coordinate</a> destination)</td></tr>
+<tr class="separator:a853bec4fe3921cdf2c6c8f0d38bfc983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a768b0dba0132f668c076e011881c4cd5"><td class="memItemLeft" align="right" valign="top">static std::stack&lt; <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_breadth_first_g_p_s.html#a768b0dba0132f668c076e011881c4cd5">getPath</a> (std::vector&lt; std::vector&lt; <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a> &gt;&gt; fromWhere, const <a class="el" href="struct_coordinate.html">Coordinate</a> current, const <a class="el" href="struct_coordinate.html">Coordinate</a> destination)</td></tr>
+<tr class="separator:a768b0dba0132f668c076e011881c4cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_g_p_s"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_g_p_s')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_g_p_s.html">GPS</a></td></tr>
-<tr class="memitem:a4091d0be439cf071b432f63fe529bc3c inherit pro_attribs_class_g_p_s"><td class="memItemLeft" align="right" valign="top"><a id="a4091d0be439cf071b432f63fe529bc3c"></a>
-<a class="el" href="class_maze.html">Maze</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>maze</b></td></tr>
-<tr class="separator:a4091d0be439cf071b432f63fe529bc3c inherit pro_attribs_class_g_p_s"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ec122f44f190c63191d6901a57c597d inherit pro_attribs_class_g_p_s"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_maze.html">Maze</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_s.html#a6ec122f44f190c63191d6901a57c597d">maze</a></td></tr>
+<tr class="separator:a6ec122f44f190c63191d6901a57c597d inherit pro_attribs_class_g_p_s"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ac8061fbca0799f6d73a326512541cd4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8061fbca0799f6d73a326512541cd4d">&#9670;&nbsp;</a></span>BreadthFirstGPS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BreadthFirstGPS::BreadthFirstGPS </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_maze.html">Maze</a> *&#160;</td>
+          <td class="paramname"><em>maze</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9696cdc41b6cab4adc8ee689ed56546e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9696cdc41b6cab4adc8ee689ed56546e">&#9670;&nbsp;</a></span>~BreadthFirstGPS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual BreadthFirstGPS::~BreadthFirstGPS </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_breadth_first_g_p_s_a9696cdc41b6cab4adc8ee689ed56546e_cgraph.png" border="0" usemap="#class_breadth_first_g_p_s_a9696cdc41b6cab4adc8ee689ed56546e_cgraph" alt=""/></div>
+<map name="class_breadth_first_g_p_s_a9696cdc41b6cab4adc8ee689ed56546e_cgraph" id="class_breadth_first_g_p_s_a9696cdc41b6cab4adc8ee689ed56546e_cgraph">
+<area shape="rect" id="node2" href="class_breadth_first_g_p_s.html#a2ca618ed6adf5b7fc5912e3984d0906c" title="nextDirection &#45; Request the directions from current cell to New Cell " alt="" coords="236,216,448,243"/>
+<area shape="rect" id="node3" href="class_breadth_first_g_p_s.html#aa2ef67ba04197477b4f156213f9fa34f" title="BreadthFirstGPS::fullPath" alt="" coords="496,241,668,268"/>
+<area shape="rect" id="node4" href="class_breadth_first_g_p_s.html#a853bec4fe3921cdf2c6c8f0d38bfc983" title="BreadthFirstGPS::search" alt="" coords="719,157,887,184"/>
+<area shape="rect" id="node11" href="class_breadth_first_g_p_s.html#a768b0dba0132f668c076e011881c4cd5" title="BreadthFirstGPS::getPath" alt="" coords="716,325,891,352"/>
+<area shape="rect" id="node5" href="class_maze.html#a92e20614a8fed75753c3eb9225df1953" title="setTraversalVisited &#45; mark cell x,y as seen by the maze solver " alt="" coords="944,5,1115,32"/>
+<area shape="rect" id="node6" href="class_maze.html#a979f3bed722d43573e44fe08f4465407" title="Maze::getSizeY" alt="" coords="972,56,1087,83"/>
+<area shape="rect" id="node7" href="class_maze.html#ac6ae469ccecdb03695c1e64aa44e4ed7" title="Maze::getSizeX" alt="" coords="973,107,1086,133"/>
+<area shape="rect" id="node8" href="class_maze.html#a0e456da6989de605f4bedad3c1d1be14" title="getNeighboringCells &#45; get a list of reachable (no wall) adjacent cells " alt="" coords="941,157,1118,184"/>
+<area shape="rect" id="node9" href="class_maze.html#abe91e9005ae12a9351e364a355aefbf0" title="hasTraversalVisited &#45; checks if the maze solve has seen cell x, y " alt="" coords="942,208,1117,235"/>
+<area shape="rect" id="node10" href="class_maze.html#a0e8f64de3332f4799f4044ee18fa2038" title="getDirectionBetweenCells get the Cardinal direction between 2 cells The cells must be 1 cell apart..." alt="" coords="939,259,1120,301"/>
+<area shape="rect" id="node12" href="cardinal8_8h.html#a432604348268c9de2fb4902f1eff6ca9" title="oppositeDirection" alt="" coords="968,325,1091,352"/>
+<area shape="rect" id="node13" href="class_maze.html#af451c9c7143883ca8a68c8dd2975a9b5" title="adjacentCell &#45; get the coordinates of the cell to the NSWE of given cell " alt="" coords="963,376,1096,403"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa2ef67ba04197477b4f156213f9fa34f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2ef67ba04197477b4f156213f9fa34f">&#9670;&nbsp;</a></span>fullPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::stack&lt; <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a> &gt; BreadthFirstGPS::fullPath </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>destination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_g_p_s.html#a280b170e909798e983166477fae62ac4">GPS</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_breadth_first_g_p_s_aa2ef67ba04197477b4f156213f9fa34f_cgraph.png" border="0" usemap="#class_breadth_first_g_p_s_aa2ef67ba04197477b4f156213f9fa34f_cgraph" alt=""/></div>
+<map name="class_breadth_first_g_p_s_aa2ef67ba04197477b4f156213f9fa34f_cgraph" id="class_breadth_first_g_p_s_aa2ef67ba04197477b4f156213f9fa34f_cgraph">
+<area shape="rect" id="node2" href="class_breadth_first_g_p_s.html#a853bec4fe3921cdf2c6c8f0d38bfc983" title="BreadthFirstGPS::search" alt="" coords="229,157,397,184"/>
+<area shape="rect" id="node9" href="class_breadth_first_g_p_s.html#a768b0dba0132f668c076e011881c4cd5" title="BreadthFirstGPS::getPath" alt="" coords="225,325,400,352"/>
+<area shape="rect" id="node3" href="class_maze.html#a92e20614a8fed75753c3eb9225df1953" title="setTraversalVisited &#45; mark cell x,y as seen by the maze solver " alt="" coords="453,5,624,32"/>
+<area shape="rect" id="node4" href="class_maze.html#a979f3bed722d43573e44fe08f4465407" title="Maze::getSizeY" alt="" coords="481,56,596,83"/>
+<area shape="rect" id="node5" href="class_maze.html#ac6ae469ccecdb03695c1e64aa44e4ed7" title="Maze::getSizeX" alt="" coords="482,107,595,133"/>
+<area shape="rect" id="node6" href="class_maze.html#a0e456da6989de605f4bedad3c1d1be14" title="getNeighboringCells &#45; get a list of reachable (no wall) adjacent cells " alt="" coords="450,157,627,184"/>
+<area shape="rect" id="node7" href="class_maze.html#abe91e9005ae12a9351e364a355aefbf0" title="hasTraversalVisited &#45; checks if the maze solve has seen cell x, y " alt="" coords="451,208,626,235"/>
+<area shape="rect" id="node8" href="class_maze.html#a0e8f64de3332f4799f4044ee18fa2038" title="getDirectionBetweenCells get the Cardinal direction between 2 cells The cells must be 1 cell apart..." alt="" coords="448,259,629,301"/>
+<area shape="rect" id="node10" href="cardinal8_8h.html#a432604348268c9de2fb4902f1eff6ca9" title="oppositeDirection" alt="" coords="477,325,600,352"/>
+<area shape="rect" id="node11" href="class_maze.html#af451c9c7143883ca8a68c8dd2975a9b5" title="adjacentCell &#45; get the coordinates of the cell to the NSWE of given cell " alt="" coords="472,376,605,403"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_breadth_first_g_p_s_aa2ef67ba04197477b4f156213f9fa34f_icgraph.png" border="0" usemap="#class_breadth_first_g_p_s_aa2ef67ba04197477b4f156213f9fa34f_icgraph" alt=""/></div>
+<map name="class_breadth_first_g_p_s_aa2ef67ba04197477b4f156213f9fa34f_icgraph" id="class_breadth_first_g_p_s_aa2ef67ba04197477b4f156213f9fa34f_icgraph">
+<area shape="rect" id="node2" href="class_breadth_first_g_p_s.html#a2ca618ed6adf5b7fc5912e3984d0906c" title="nextDirection &#45; Request the directions from current cell to New Cell " alt="" coords="225,5,437,32"/>
+<area shape="rect" id="node3" href="class_breadth_first_g_p_s.html#a9696cdc41b6cab4adc8ee689ed56546e" title="BreadthFirstGPS::~Breadth\lFirstGPS" alt="" coords="485,23,668,65"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2ca618ed6adf5b7fc5912e3984d0906c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ca618ed6adf5b7fc5912e3984d0906c">&#9670;&nbsp;</a></span>getDirectionTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a> BreadthFirstGPS::getDirectionTo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>destination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>nextDirection - Request the directions from current cell to New Cell </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td>- Current Cell </td></tr>
+    <tr><td class="paramname">destination</td><td>- Destination Cell </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Direction to the new cell </dd></dl>
+
+<p>Implements <a class="el" href="class_g_p_s.html#aa10a5e89892e4ad32bf81d103db8e9c0">GPS</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_breadth_first_g_p_s_a2ca618ed6adf5b7fc5912e3984d0906c_cgraph.png" border="0" usemap="#class_breadth_first_g_p_s_a2ca618ed6adf5b7fc5912e3984d0906c_cgraph" alt=""/></div>
+<map name="class_breadth_first_g_p_s_a2ca618ed6adf5b7fc5912e3984d0906c_cgraph" id="class_breadth_first_g_p_s_a2ca618ed6adf5b7fc5912e3984d0906c_cgraph">
+<area shape="rect" id="node2" href="class_breadth_first_g_p_s.html#aa2ef67ba04197477b4f156213f9fa34f" title="BreadthFirstGPS::fullPath" alt="" coords="265,241,437,268"/>
+<area shape="rect" id="node3" href="class_breadth_first_g_p_s.html#a853bec4fe3921cdf2c6c8f0d38bfc983" title="BreadthFirstGPS::search" alt="" coords="489,157,657,184"/>
+<area shape="rect" id="node10" href="class_breadth_first_g_p_s.html#a768b0dba0132f668c076e011881c4cd5" title="BreadthFirstGPS::getPath" alt="" coords="485,325,660,352"/>
+<area shape="rect" id="node4" href="class_maze.html#a92e20614a8fed75753c3eb9225df1953" title="setTraversalVisited &#45; mark cell x,y as seen by the maze solver " alt="" coords="713,5,884,32"/>
+<area shape="rect" id="node5" href="class_maze.html#a979f3bed722d43573e44fe08f4465407" title="Maze::getSizeY" alt="" coords="741,56,856,83"/>
+<area shape="rect" id="node6" href="class_maze.html#ac6ae469ccecdb03695c1e64aa44e4ed7" title="Maze::getSizeX" alt="" coords="742,107,855,133"/>
+<area shape="rect" id="node7" href="class_maze.html#a0e456da6989de605f4bedad3c1d1be14" title="getNeighboringCells &#45; get a list of reachable (no wall) adjacent cells " alt="" coords="710,157,887,184"/>
+<area shape="rect" id="node8" href="class_maze.html#abe91e9005ae12a9351e364a355aefbf0" title="hasTraversalVisited &#45; checks if the maze solve has seen cell x, y " alt="" coords="711,208,886,235"/>
+<area shape="rect" id="node9" href="class_maze.html#a0e8f64de3332f4799f4044ee18fa2038" title="getDirectionBetweenCells get the Cardinal direction between 2 cells The cells must be 1 cell apart..." alt="" coords="708,259,889,301"/>
+<area shape="rect" id="node11" href="cardinal8_8h.html#a432604348268c9de2fb4902f1eff6ca9" title="oppositeDirection" alt="" coords="737,325,860,352"/>
+<area shape="rect" id="node12" href="class_maze.html#af451c9c7143883ca8a68c8dd2975a9b5" title="adjacentCell &#45; get the coordinates of the cell to the NSWE of given cell " alt="" coords="732,376,865,403"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_breadth_first_g_p_s_a2ca618ed6adf5b7fc5912e3984d0906c_icgraph.png" border="0" usemap="#class_breadth_first_g_p_s_a2ca618ed6adf5b7fc5912e3984d0906c_icgraph" alt=""/></div>
+<map name="class_breadth_first_g_p_s_a2ca618ed6adf5b7fc5912e3984d0906c_icgraph" id="class_breadth_first_g_p_s_a2ca618ed6adf5b7fc5912e3984d0906c_icgraph">
+<area shape="rect" id="node2" href="class_breadth_first_g_p_s.html#a9696cdc41b6cab4adc8ee689ed56546e" title="BreadthFirstGPS::~Breadth\lFirstGPS" alt="" coords="265,5,448,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a768b0dba0132f668c076e011881c4cd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a768b0dba0132f668c076e011881c4cd5">&#9670;&nbsp;</a></span>getPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::stack&lt; <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a> &gt; BreadthFirstGPS::getPath </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a> &gt;&gt;&#160;</td>
+          <td class="paramname"><em>fromWhere</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>current</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>destination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_breadth_first_g_p_s_a768b0dba0132f668c076e011881c4cd5_cgraph.png" border="0" usemap="#class_breadth_first_g_p_s_a768b0dba0132f668c076e011881c4cd5_cgraph" alt=""/></div>
+<map name="class_breadth_first_g_p_s_a768b0dba0132f668c076e011881c4cd5_cgraph" id="class_breadth_first_g_p_s_a768b0dba0132f668c076e011881c4cd5_cgraph">
+<area shape="rect" id="node2" href="cardinal8_8h.html#a432604348268c9de2fb4902f1eff6ca9" title="oppositeDirection" alt="" coords="233,5,356,32"/>
+<area shape="rect" id="node3" href="class_maze.html#af451c9c7143883ca8a68c8dd2975a9b5" title="adjacentCell &#45; get the coordinates of the cell to the NSWE of given cell " alt="" coords="228,56,361,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_breadth_first_g_p_s_a768b0dba0132f668c076e011881c4cd5_icgraph.png" border="0" usemap="#class_breadth_first_g_p_s_a768b0dba0132f668c076e011881c4cd5_icgraph" alt=""/></div>
+<map name="class_breadth_first_g_p_s_a768b0dba0132f668c076e011881c4cd5_icgraph" id="class_breadth_first_g_p_s_a768b0dba0132f668c076e011881c4cd5_icgraph">
+<area shape="rect" id="node2" href="class_breadth_first_g_p_s.html#aa2ef67ba04197477b4f156213f9fa34f" title="BreadthFirstGPS::fullPath" alt="" coords="228,31,400,57"/>
+<area shape="rect" id="node3" href="class_breadth_first_g_p_s.html#a2ca618ed6adf5b7fc5912e3984d0906c" title="nextDirection &#45; Request the directions from current cell to New Cell " alt="" coords="448,5,660,32"/>
+<area shape="rect" id="node4" href="class_breadth_first_g_p_s.html#a9696cdc41b6cab4adc8ee689ed56546e" title="BreadthFirstGPS::~Breadth\lFirstGPS" alt="" coords="708,23,891,65"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a853bec4fe3921cdf2c6c8f0d38bfc983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a853bec4fe3921cdf2c6c8f0d38bfc983">&#9670;&nbsp;</a></span>search()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::vector&lt; <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a> &gt; &gt; BreadthFirstGPS::search </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>current</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>destination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_breadth_first_g_p_s_a853bec4fe3921cdf2c6c8f0d38bfc983_cgraph.png" border="0" usemap="#class_breadth_first_g_p_s_a853bec4fe3921cdf2c6c8f0d38bfc983_cgraph" alt=""/></div>
+<map name="class_breadth_first_g_p_s_a853bec4fe3921cdf2c6c8f0d38bfc983_cgraph" id="class_breadth_first_g_p_s_a853bec4fe3921cdf2c6c8f0d38bfc983_cgraph">
+<area shape="rect" id="node2" href="class_maze.html#a92e20614a8fed75753c3eb9225df1953" title="setTraversalVisited &#45; mark cell x,y as seen by the maze solver " alt="" coords="227,5,397,32"/>
+<area shape="rect" id="node3" href="class_maze.html#a979f3bed722d43573e44fe08f4465407" title="Maze::getSizeY" alt="" coords="255,56,369,83"/>
+<area shape="rect" id="node4" href="class_maze.html#ac6ae469ccecdb03695c1e64aa44e4ed7" title="Maze::getSizeX" alt="" coords="255,107,369,133"/>
+<area shape="rect" id="node5" href="class_maze.html#a0e456da6989de605f4bedad3c1d1be14" title="getNeighboringCells &#45; get a list of reachable (no wall) adjacent cells " alt="" coords="223,157,401,184"/>
+<area shape="rect" id="node6" href="class_maze.html#abe91e9005ae12a9351e364a355aefbf0" title="hasTraversalVisited &#45; checks if the maze solve has seen cell x, y " alt="" coords="225,208,399,235"/>
+<area shape="rect" id="node7" href="class_maze.html#a0e8f64de3332f4799f4044ee18fa2038" title="getDirectionBetweenCells get the Cardinal direction between 2 cells The cells must be 1 cell apart..." alt="" coords="221,259,403,301"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_breadth_first_g_p_s_a853bec4fe3921cdf2c6c8f0d38bfc983_icgraph.png" border="0" usemap="#class_breadth_first_g_p_s_a853bec4fe3921cdf2c6c8f0d38bfc983_icgraph" alt=""/></div>
+<map name="class_breadth_first_g_p_s_a853bec4fe3921cdf2c6c8f0d38bfc983_icgraph" id="class_breadth_first_g_p_s_a853bec4fe3921cdf2c6c8f0d38bfc983_icgraph">
+<area shape="rect" id="node2" href="class_breadth_first_g_p_s.html#aa2ef67ba04197477b4f156213f9fa34f" title="BreadthFirstGPS::fullPath" alt="" coords="221,31,393,57"/>
+<area shape="rect" id="node3" href="class_breadth_first_g_p_s.html#a2ca618ed6adf5b7fc5912e3984d0906c" title="nextDirection &#45; Request the directions from current cell to New Cell " alt="" coords="441,5,653,32"/>
+<area shape="rect" id="node4" href="class_breadth_first_g_p_s.html#a9696cdc41b6cab4adc8ee689ed56546e" title="BreadthFirstGPS::~Breadth\lFirstGPS" alt="" coords="701,23,884,65"/>
+</map>
+</div>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Tyler/workspace/YSU-Micromouse-SAC-2017/src/src/<a class="el" href="breadthfirstgps_8h_source.html">breadthfirstgps.h</a></li>
-<li>C:/Users/Tyler/workspace/YSU-Micromouse-SAC-2017/src/src/breadthfirstgps.cpp</li>
+<li>C:/Users/Phill/workspace/YSU-Micromouse-SAC-2017/src/src/<a class="el" href="breadthfirstgps_8h_source.html">breadthfirstgps.h</a></li>
+<li>C:/Users/Phill/workspace/YSU-Micromouse-SAC-2017/src/src/<a class="el" href="breadthfirstgps_8cpp.html">breadthfirstgps.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

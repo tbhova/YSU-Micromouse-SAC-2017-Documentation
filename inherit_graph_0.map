@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$struct_coordinate.html" title="Coordinate" alt="" coords="5,5,89,32"/>
+<area shape="rect" id="node1" href="$class_abstract_driver.html" title="AbstractDriver" alt="" coords="5,5,108,32"/>
+<area shape="rect" id="node2" href="$class_driver.html" title="The driver class Abstract class, all other drivers should inherit from this. " alt="" coords="156,5,211,32"/>
+<area shape="rect" id="node3" href="$class_stop_go_driver.html" title="The StopGoDriver class Driver that stops after each move Turns are made in place. ..." alt="" coords="259,5,357,32"/>
 </map>

@@ -1,0 +1,4 @@
+<map id="Maze::setMouseVisited" name="Maze::setMouseVisited">
+<area shape="rect" id="node2" href="$class_maze.html#afc4ab87a6298915e6aba874647b7bd6a" title="setMouseVisited &#45; mark cell x, y as visited by the mouse " alt="" coords="212,5,371,32"/>
+<area shape="rect" id="node3" href="$class_maze.html#a74f85fc2c87e4ac956b92286cf81cefb" title="hasMouseVisited &#45; checks if the mouse has visited x, y " alt="" coords="419,5,581,32"/>
+</map>

@@ -111,39 +111,105 @@ Collaboration diagram for GPS:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a73812d4245f70be142de3ab708ac17be"><td class="memItemLeft" align="right" valign="top"><a id="a73812d4245f70be142de3ab708ac17be"></a>
-virtual Cardinal8&#160;</td><td class="memItemRight" valign="bottom"><b>nextDirection</b> ()=0</td></tr>
-<tr class="separator:a73812d4245f70be142de3ab708ac17be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b3e0ce57a2142efadf26e7c3baefc77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_s.html#a2b3e0ce57a2142efadf26e7c3baefc77">askForDirectionToXY</a> (<a class="el" href="struct_coordinate.html">Coordinate</a> cell, <a class="el" href="struct_coordinate.html">Coordinate</a> cell)</td></tr>
-<tr class="memdesc:a2b3e0ce57a2142efadf26e7c3baefc77"><td class="mdescLeft">&#160;</td><td class="mdescRight">askForDirectionToXY - Request the directions from current cell to New Cell  <a href="#a2b3e0ce57a2142efadf26e7c3baefc77">More...</a><br /></td></tr>
-<tr class="separator:a2b3e0ce57a2142efadf26e7c3baefc77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e4d47e716554a64d6e09db3136d4ded"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_s.html#a1e4d47e716554a64d6e09db3136d4ded">GPS</a> (<a class="el" href="class_maze.html">Maze</a> *<a class="el" href="class_g_p_s.html#a6ec122f44f190c63191d6901a57c597d">maze</a>)</td></tr>
+<tr class="separator:a1e4d47e716554a64d6e09db3136d4ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b854e815a4c404e97b4ecb318b1529a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_s.html#a8b854e815a4c404e97b4ecb318b1529a">~GPS</a> ()</td></tr>
+<tr class="separator:a8b854e815a4c404e97b4ecb318b1529a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa10a5e89892e4ad32bf81d103db8e9c0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_s.html#aa10a5e89892e4ad32bf81d103db8e9c0">getDirectionTo</a> (const <a class="el" href="struct_coordinate.html">Coordinate</a> start, const <a class="el" href="struct_coordinate.html">Coordinate</a> destination)=0</td></tr>
+<tr class="memdesc:aa10a5e89892e4ad32bf81d103db8e9c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">nextDirection - Request the directions from current cell to New Cell  <a href="#aa10a5e89892e4ad32bf81d103db8e9c0">More...</a><br /></td></tr>
+<tr class="separator:aa10a5e89892e4ad32bf81d103db8e9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a280b170e909798e983166477fae62ac4"><td class="memItemLeft" align="right" valign="top">virtual std::stack&lt; <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_s.html#a280b170e909798e983166477fae62ac4">fullPath</a> (const <a class="el" href="struct_coordinate.html">Coordinate</a> start, const <a class="el" href="struct_coordinate.html">Coordinate</a> destination)=0</td></tr>
+<tr class="separator:a280b170e909798e983166477fae62ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a4091d0be439cf071b432f63fe529bc3c"><td class="memItemLeft" align="right" valign="top"><a id="a4091d0be439cf071b432f63fe529bc3c"></a>
-<a class="el" href="class_maze.html">Maze</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>maze</b></td></tr>
-<tr class="separator:a4091d0be439cf071b432f63fe529bc3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ec122f44f190c63191d6901a57c597d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_maze.html">Maze</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_p_s.html#a6ec122f44f190c63191d6901a57c597d">maze</a></td></tr>
+<tr class="separator:a6ec122f44f190c63191d6901a57c597d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The gps class Abstract class, all other gps classes should inherit from this Gives directions to the navigator. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2b3e0ce57a2142efadf26e7c3baefc77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b3e0ce57a2142efadf26e7c3baefc77">&#9670;&nbsp;</a></span>askForDirectionToXY()</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1e4d47e716554a64d6e09db3136d4ded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e4d47e716554a64d6e09db3136d4ded">&#9670;&nbsp;</a></span>GPS()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_coordinate.html">Coordinate</a> GPS::askForDirectionToXY </td>
+          <td class="memname">GPS::GPS </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td>
-          <td class="paramname"><em>cell</em>, </td>
+          <td class="paramtype"><a class="el" href="class_maze.html">Maze</a> *&#160;</td>
+          <td class="paramname"><em>maze</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b854e815a4c404e97b4ecb318b1529a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b854e815a4c404e97b4ecb318b1529a">&#9670;&nbsp;</a></span>~GPS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual GPS::~GPS </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_g_p_s_a8b854e815a4c404e97b4ecb318b1529a_cgraph.png" border="0" usemap="#class_g_p_s_a8b854e815a4c404e97b4ecb318b1529a_cgraph" alt=""/></div>
+<map name="class_g_p_s_a8b854e815a4c404e97b4ecb318b1529a_cgraph" id="class_g_p_s_a8b854e815a4c404e97b4ecb318b1529a_cgraph">
+<area shape="rect" id="node2" href="class_g_p_s.html#aa10a5e89892e4ad32bf81d103db8e9c0" title="nextDirection &#45; Request the directions from current cell to New Cell " alt="" coords="148,5,289,32"/>
+<area shape="rect" id="node3" href="class_g_p_s.html#a280b170e909798e983166477fae62ac4" title="GPS::fullPath" alt="" coords="168,56,269,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a280b170e909798e983166477fae62ac4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a280b170e909798e983166477fae62ac4">&#9670;&nbsp;</a></span>fullPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::stack&lt;<a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a>&gt; GPS::fullPath </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td>
-          <td class="paramname"><em>cell</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>destination</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -151,22 +217,110 @@ Protected Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>askForDirectionToXY - Request the directions from current cell to New Cell </p>
+<p>Implemented in <a class="el" href="class_breadth_first_g_p_s.html#aa2ef67ba04197477b4f156213f9fa34f">BreadthFirstGPS</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_g_p_s_a280b170e909798e983166477fae62ac4_icgraph.png" border="0" usemap="#class_g_p_s_a280b170e909798e983166477fae62ac4_icgraph" alt=""/></div>
+<map name="class_g_p_s_a280b170e909798e983166477fae62ac4_icgraph" id="class_g_p_s_a280b170e909798e983166477fae62ac4_icgraph">
+<area shape="rect" id="node2" href="class_g_p_s.html#a8b854e815a4c404e97b4ecb318b1529a" title="GPS::~GPS" alt="" coords="187,5,281,32"/>
+<area shape="rect" id="node3" href="class_navigator.html#aa0556bf5a6706311470ec46a45c3da47" title="Navigator::optimalRoute" alt="" coords="155,56,313,83"/>
+<area shape="rect" id="node4" href="class_navigator.html#ae67397a343ba76d5cd4407983c2e5f22" title="run &#45; function called by main to either map or travel optimalRoute " alt="" coords="361,56,463,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa10a5e89892e4ad32bf81d103db8e9c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa10a5e89892e4ad32bf81d103db8e9c0">&#9670;&nbsp;</a></span>getDirectionTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a> GPS::getDirectionTo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>destination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>nextDirection - Request the directions from current cell to New Cell </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cell</td><td>- Current Cell </td></tr>
-    <tr><td class="paramname">cell</td><td>- Destination Cell </td></tr>
+    <tr><td class="paramname">start</td><td>- Current Cell </td></tr>
+    <tr><td class="paramname">destination</td><td>- Destination Cell </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Direction to the new cell </dd></dl>
 
+<p>Implemented in <a class="el" href="class_breadth_first_g_p_s.html#a2ca618ed6adf5b7fc5912e3984d0906c">BreadthFirstGPS</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_g_p_s_aa10a5e89892e4ad32bf81d103db8e9c0_icgraph.png" border="0" usemap="#class_g_p_s_aa10a5e89892e4ad32bf81d103db8e9c0_icgraph" alt=""/></div>
+<map name="class_g_p_s_aa10a5e89892e4ad32bf81d103db8e9c0_icgraph" id="class_g_p_s_aa10a5e89892e4ad32bf81d103db8e9c0_icgraph">
+<area shape="rect" id="node2" href="class_g_p_s.html#a8b854e815a4c404e97b4ecb318b1529a" title="GPS::~GPS" alt="" coords="201,5,296,32"/>
+<area shape="rect" id="node3" href="class_navigator.html#a3b87ee20e803f1c51aa826e3a4bebc46" title="map &#45; updateMaze with wall data from Driver generate direction and path of travel from current cell t..." alt="" coords="195,56,303,83"/>
+<area shape="rect" id="node4" href="class_navigator.html#ae67397a343ba76d5cd4407983c2e5f22" title="run &#45; function called by main to either map or travel optimalRoute " alt="" coords="351,56,452,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6ec122f44f190c63191d6901a57c597d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ec122f44f190c63191d6901a57c597d">&#9670;&nbsp;</a></span>maze</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_maze.html">Maze</a>* GPS::maze</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Tyler/workspace/YSU-Micromouse-SAC-2017/src/src/<a class="el" href="gps_8h_source.html">gps.h</a></li>
+<li>C:/Users/Phill/workspace/YSU-Micromouse-SAC-2017/src/src/<a class="el" href="gps_8h_source.html">gps.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

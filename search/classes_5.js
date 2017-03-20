@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['infraredsensorarray',['InfraredSensorArray',['../class_infrared_sensor_array.html',1,'']]]
+  ['gps',['GPS',['../class_g_p_s.html',1,'']]]
 ];

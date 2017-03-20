@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['coordinate',['Coordinate',['../struct_coordinate.html',1,'']]]
+  ['breadthfirstgps',['BreadthFirstGPS',['../class_breadth_first_g_p_s.html',1,'']]]
 ];

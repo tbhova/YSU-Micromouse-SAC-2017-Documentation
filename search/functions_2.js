@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['hasmousevisited',['hasMouseVisited',['../class_maze.html#aeb1cfb30462b6d207a7d6779383efde0',1,'Maze']]],
-  ['hastraversalvisited',['hasTraversalVisited',['../class_maze.html#a53696c4a66b6a3d506b9e94a913e43eb',1,'Maze']]]
+  ['coordinate',['Coordinate',['../struct_coordinate.html#ac39314b83dcf3e060e051dd29086c699',1,'Coordinate::Coordinate(const unsigned int x, const unsigned int y)'],['../struct_coordinate.html#aac6f323a685fc1e88fbea9c86f1e600d',1,'Coordinate::Coordinate()']]]
 ];

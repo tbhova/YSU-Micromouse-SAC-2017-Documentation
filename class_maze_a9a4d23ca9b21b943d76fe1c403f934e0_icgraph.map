@@ -1,0 +1,8 @@
+<map id="Maze::placeWall" name="Maze::placeWall">
+<area shape="rect" id="node2" href="$class_maze.html#a360f16ac3753cb4e01b695c2f10c79a1" title="Maze &#45; Constructor, adds outer perimeter walls. " alt="" coords="208,5,303,32"/>
+<area shape="rect" id="node3" href="$class_maze.html#a23d1b2c2db0a101f9a615798ad418f95" title="Maze::getDestinationCell" alt="" coords="172,56,339,83"/>
+<area shape="rect" id="node7" href="$class_navigator.html#a3b87ee20e803f1c51aa826e3a4bebc46" title="map &#45; updateMaze with wall data from Driver generate direction and path of travel from current cell t..." alt="" coords="412,107,520,133"/>
+<area shape="rect" id="node4" href="$class_navigator.html#a9bb044b904a3f63238d336999c5a7017" title="Navigator::Navigator" alt="" coords="398,5,534,32"/>
+<area shape="rect" id="node5" href="$class_navigator.html#aa0556bf5a6706311470ec46a45c3da47" title="Navigator::optimalRoute" alt="" coords="387,56,545,83"/>
+<area shape="rect" id="node6" href="$class_navigator.html#ae67397a343ba76d5cd4407983c2e5f22" title="run &#45; function called by main to either map or travel optimalRoute " alt="" coords="593,81,695,108"/>
+</map>

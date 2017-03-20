@@ -1,3 +1,4 @@
 <map id="StopGoDriver" name="StopGoDriver">
-<area shape="rect" id="node2" href="$class_driver.html" title="The driver class Abstract class, all other drivers should inherit from this. " alt="" coords="27,5,82,32"/>
+<area shape="rect" id="node2" href="$class_driver.html" title="The driver class Abstract class, all other drivers should inherit from this. " alt="" coords="29,80,84,107"/>
+<area shape="rect" id="node3" href="$class_abstract_driver.html" title="AbstractDriver" alt="" coords="5,5,108,32"/>
 </map>

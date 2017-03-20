@@ -82,6 +82,7 @@ $(document).ready(function(){initNavTree('class_maze.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_maze-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Maze Class Reference</div>  </div>
@@ -95,78 +96,94 @@ $(document).ready(function(){initNavTree('class_maze.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a075a513416c741a24ab712ca3980a6f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a075a513416c741a24ab712ca3980a6f4">Maze</a> (const int sizeX, const int sizeY)</td></tr>
-<tr class="memdesc:a075a513416c741a24ab712ca3980a6f4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_maze.html" title="The Maze class Keeps track of walls and which cells the mouse (and traversal algorithm) has visited...">Maze</a> - Constructor, adds outer perimeter walls.  <a href="#a075a513416c741a24ab712ca3980a6f4">More...</a><br /></td></tr>
-<tr class="separator:a075a513416c741a24ab712ca3980a6f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2af4de4665b7a32bcd86c305fbd15405"><td class="memItemLeft" align="right" valign="top"><a id="a2af4de4665b7a32bcd86c305fbd15405"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getSizeX</b> () const</td></tr>
-<tr class="separator:a2af4de4665b7a32bcd86c305fbd15405"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa25f0c87f73b5c06c588db05a38c53e8"><td class="memItemLeft" align="right" valign="top"><a id="aa25f0c87f73b5c06c588db05a38c53e8"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getSizeY</b> () const</td></tr>
-<tr class="separator:aa25f0c87f73b5c06c588db05a38c53e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d62900ebfd21548c11c10cc8b3af0af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a0d62900ebfd21548c11c10cc8b3af0af">placeWall</a> (const int x, const int y, const Cardinal8 dir)</td></tr>
-<tr class="memdesc:a0d62900ebfd21548c11c10cc8b3af0af"><td class="mdescLeft">&#160;</td><td class="mdescRight">placeWall - puts the "dir" wall at location x, y Does nothing if there is already a wall there  <a href="#a0d62900ebfd21548c11c10cc8b3af0af">More...</a><br /></td></tr>
-<tr class="separator:a0d62900ebfd21548c11c10cc8b3af0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31134b07b434ec2ebe43a57c3d4104a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a31134b07b434ec2ebe43a57c3d4104a7">removeWall</a> (const int x, const int y, const Cardinal8 dir)</td></tr>
-<tr class="memdesc:a31134b07b434ec2ebe43a57c3d4104a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">removeWall - removes the "dir" wall from location x, y Does nothing if there is no wall  <a href="#a31134b07b434ec2ebe43a57c3d4104a7">More...</a><br /></td></tr>
-<tr class="separator:a31134b07b434ec2ebe43a57c3d4104a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad533bc963e43ffbeeed5b1d9c2fe368b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#ad533bc963e43ffbeeed5b1d9c2fe368b">isWall</a> (const int x, const int y, const Cardinal8 dir) const</td></tr>
-<tr class="memdesc:ad533bc963e43ffbeeed5b1d9c2fe368b"><td class="mdescLeft">&#160;</td><td class="mdescRight">isWall - checks whether there is a "dir" wall at location x, y  <a href="#ad533bc963e43ffbeeed5b1d9c2fe368b">More...</a><br /></td></tr>
-<tr class="separator:ad533bc963e43ffbeeed5b1d9c2fe368b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05df5c8bd0895c196dbf5aec277dcf6e"><td class="memItemLeft" align="right" valign="top"><a id="a05df5c8bd0895c196dbf5aec277dcf6e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isWall</b> (const int x1, const int y1, const int x2, const int y2) const</td></tr>
-<tr class="separator:a05df5c8bd0895c196dbf5aec277dcf6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19ccd969acb12eaf110264b44dbda74a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_coordinate.html">Coordinate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a19ccd969acb12eaf110264b44dbda74a">getNeighboringCells</a> (const int x, const int y) const</td></tr>
-<tr class="memdesc:a19ccd969acb12eaf110264b44dbda74a"><td class="mdescLeft">&#160;</td><td class="mdescRight">getNeighboringCells - get a list of reachable (no wall) adjacent cells  <a href="#a19ccd969acb12eaf110264b44dbda74a">More...</a><br /></td></tr>
-<tr class="separator:a19ccd969acb12eaf110264b44dbda74a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb1cfb30462b6d207a7d6779383efde0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#aeb1cfb30462b6d207a7d6779383efde0">hasMouseVisited</a> (const int x, const int y) const</td></tr>
-<tr class="memdesc:aeb1cfb30462b6d207a7d6779383efde0"><td class="mdescLeft">&#160;</td><td class="mdescRight">hasMouseVisited - checks if the mouse has visited x, y  <a href="#aeb1cfb30462b6d207a7d6779383efde0">More...</a><br /></td></tr>
-<tr class="separator:aeb1cfb30462b6d207a7d6779383efde0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d1c9574c636286d43cf326909a369fc"><td class="memItemLeft" align="right" valign="top"><a id="a3d1c9574c636286d43cf326909a369fc"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasMouseVisited</b> (const <a class="el" href="struct_coordinate.html">Coordinate</a> cell) const</td></tr>
+<tr class="memitem:a360f16ac3753cb4e01b695c2f10c79a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a360f16ac3753cb4e01b695c2f10c79a1">Maze</a> (const unsigned int sizeX, const unsigned int sizeY)</td></tr>
+<tr class="memdesc:a360f16ac3753cb4e01b695c2f10c79a1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_maze.html" title="The Maze class Keeps track of walls and which cells the mouse (and traversal algorithm) has visited...">Maze</a> - Constructor, adds outer perimeter walls.  <a href="#a360f16ac3753cb4e01b695c2f10c79a1">More...</a><br /></td></tr>
+<tr class="separator:a360f16ac3753cb4e01b695c2f10c79a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6ae469ccecdb03695c1e64aa44e4ed7"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#ac6ae469ccecdb03695c1e64aa44e4ed7">getSizeX</a> () const</td></tr>
+<tr class="separator:ac6ae469ccecdb03695c1e64aa44e4ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a979f3bed722d43573e44fe08f4465407"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a979f3bed722d43573e44fe08f4465407">getSizeY</a> () const</td></tr>
+<tr class="separator:a979f3bed722d43573e44fe08f4465407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d1b2c2db0a101f9a615798ad418f95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a23d1b2c2db0a101f9a615798ad418f95">getDestinationCell</a> () const</td></tr>
+<tr class="separator:a23d1b2c2db0a101f9a615798ad418f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a4d23ca9b21b943d76fe1c403f934e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a9a4d23ca9b21b943d76fe1c403f934e0">placeWall</a> (const unsigned int x, const unsigned int y, const <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a> dir)</td></tr>
+<tr class="memdesc:a9a4d23ca9b21b943d76fe1c403f934e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">placeWall - puts the "dir" wall at location x, y Does nothing if there is already a wall there  <a href="#a9a4d23ca9b21b943d76fe1c403f934e0">More...</a><br /></td></tr>
+<tr class="separator:a9a4d23ca9b21b943d76fe1c403f934e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f624171682abf4d0b18c24bf3e9620f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a8f624171682abf4d0b18c24bf3e9620f">removeWall</a> (const unsigned int x, const unsigned int y, const <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a> dir)</td></tr>
+<tr class="memdesc:a8f624171682abf4d0b18c24bf3e9620f"><td class="mdescLeft">&#160;</td><td class="mdescRight">removeWall - removes the "dir" wall from location x, y Does nothing if there is no wall  <a href="#a8f624171682abf4d0b18c24bf3e9620f">More...</a><br /></td></tr>
+<tr class="separator:a8f624171682abf4d0b18c24bf3e9620f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e5c65f25f273c6403fc17ad0bc85f59"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a4e5c65f25f273c6403fc17ad0bc85f59">isWall</a> (const unsigned int x, const unsigned int y, const <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a> dir) const</td></tr>
+<tr class="memdesc:a4e5c65f25f273c6403fc17ad0bc85f59"><td class="mdescLeft">&#160;</td><td class="mdescRight">isWall - checks whether there is a "dir" wall at location x, y  <a href="#a4e5c65f25f273c6403fc17ad0bc85f59">More...</a><br /></td></tr>
+<tr class="separator:a4e5c65f25f273c6403fc17ad0bc85f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aa2fa8348fc1bda4ee9c0e197eef958"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a9aa2fa8348fc1bda4ee9c0e197eef958">isWall</a> (const unsigned int x1, const unsigned int y1, const unsigned int x2, const unsigned int y2) const</td></tr>
+<tr class="separator:a9aa2fa8348fc1bda4ee9c0e197eef958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e456da6989de605f4bedad3c1d1be14"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_coordinate.html">Coordinate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a0e456da6989de605f4bedad3c1d1be14">getNeighboringCells</a> (const unsigned int x, const unsigned int y) const</td></tr>
+<tr class="memdesc:a0e456da6989de605f4bedad3c1d1be14"><td class="mdescLeft">&#160;</td><td class="mdescRight">getNeighboringCells - get a list of reachable (no wall) adjacent cells  <a href="#a0e456da6989de605f4bedad3c1d1be14">More...</a><br /></td></tr>
+<tr class="separator:a0e456da6989de605f4bedad3c1d1be14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a57b8f7d3e373a92bff1c22cea3ced8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_coordinate.html">Coordinate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a6a57b8f7d3e373a92bff1c22cea3ced8">getNeighboringCells</a> (const <a class="el" href="struct_coordinate.html">Coordinate</a> cell) const</td></tr>
+<tr class="separator:a6a57b8f7d3e373a92bff1c22cea3ced8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f85fc2c87e4ac956b92286cf81cefb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a74f85fc2c87e4ac956b92286cf81cefb">hasMouseVisited</a> (const unsigned int x, const unsigned int y) const</td></tr>
+<tr class="memdesc:a74f85fc2c87e4ac956b92286cf81cefb"><td class="mdescLeft">&#160;</td><td class="mdescRight">hasMouseVisited - checks if the mouse has visited x, y  <a href="#a74f85fc2c87e4ac956b92286cf81cefb">More...</a><br /></td></tr>
+<tr class="separator:a74f85fc2c87e4ac956b92286cf81cefb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d1c9574c636286d43cf326909a369fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a3d1c9574c636286d43cf326909a369fc">hasMouseVisited</a> (const <a class="el" href="struct_coordinate.html">Coordinate</a> cell) const</td></tr>
 <tr class="separator:a3d1c9574c636286d43cf326909a369fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2405374c6e1e55bee27d5ad0e4fdb62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#ac2405374c6e1e55bee27d5ad0e4fdb62">setMouseVisited</a> (const int x, const int y)</td></tr>
-<tr class="memdesc:ac2405374c6e1e55bee27d5ad0e4fdb62"><td class="mdescLeft">&#160;</td><td class="mdescRight">setMouseVisited - mark cell x, y as visited by the mouse  <a href="#ac2405374c6e1e55bee27d5ad0e4fdb62">More...</a><br /></td></tr>
-<tr class="separator:ac2405374c6e1e55bee27d5ad0e4fdb62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac62ccbdbfac4073f1f33ec8a8d6d3ce8"><td class="memItemLeft" align="right" valign="top"><a id="ac62ccbdbfac4073f1f33ec8a8d6d3ce8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setMouseVisited</b> (const <a class="el" href="struct_coordinate.html">Coordinate</a> cell)</td></tr>
+<tr class="memitem:afc4ab87a6298915e6aba874647b7bd6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#afc4ab87a6298915e6aba874647b7bd6a">setMouseVisited</a> (const unsigned int x, const unsigned int y)</td></tr>
+<tr class="memdesc:afc4ab87a6298915e6aba874647b7bd6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">setMouseVisited - mark cell x, y as visited by the mouse  <a href="#afc4ab87a6298915e6aba874647b7bd6a">More...</a><br /></td></tr>
+<tr class="separator:afc4ab87a6298915e6aba874647b7bd6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac62ccbdbfac4073f1f33ec8a8d6d3ce8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#ac62ccbdbfac4073f1f33ec8a8d6d3ce8">setMouseVisited</a> (const <a class="el" href="struct_coordinate.html">Coordinate</a> cell)</td></tr>
 <tr class="separator:ac62ccbdbfac4073f1f33ec8a8d6d3ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53696c4a66b6a3d506b9e94a913e43eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a53696c4a66b6a3d506b9e94a913e43eb">hasTraversalVisited</a> (const int x, const int y) const</td></tr>
-<tr class="memdesc:a53696c4a66b6a3d506b9e94a913e43eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">hasTraversalVisited - checks if the maze solve has seen cell x, y  <a href="#a53696c4a66b6a3d506b9e94a913e43eb">More...</a><br /></td></tr>
-<tr class="separator:a53696c4a66b6a3d506b9e94a913e43eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f7e1536f6d8f5606054c6cc1cfa2d7d"><td class="memItemLeft" align="right" valign="top"><a id="a7f7e1536f6d8f5606054c6cc1cfa2d7d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasTraversalVisited</b> (const <a class="el" href="struct_coordinate.html">Coordinate</a> cell) const</td></tr>
+<tr class="memitem:abe91e9005ae12a9351e364a355aefbf0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#abe91e9005ae12a9351e364a355aefbf0">hasTraversalVisited</a> (const unsigned int x, const unsigned int y) const</td></tr>
+<tr class="memdesc:abe91e9005ae12a9351e364a355aefbf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">hasTraversalVisited - checks if the maze solve has seen cell x, y  <a href="#abe91e9005ae12a9351e364a355aefbf0">More...</a><br /></td></tr>
+<tr class="separator:abe91e9005ae12a9351e364a355aefbf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f7e1536f6d8f5606054c6cc1cfa2d7d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a7f7e1536f6d8f5606054c6cc1cfa2d7d">hasTraversalVisited</a> (const <a class="el" href="struct_coordinate.html">Coordinate</a> cell) const</td></tr>
 <tr class="separator:a7f7e1536f6d8f5606054c6cc1cfa2d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2df48b8796f8b1b31b66ead7db9a27f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a2df48b8796f8b1b31b66ead7db9a27f0">setTraversalVisited</a> (const int x, const int y)</td></tr>
-<tr class="memdesc:a2df48b8796f8b1b31b66ead7db9a27f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">setTraversalVisited - mark cell x,y as seen by the maze solver  <a href="#a2df48b8796f8b1b31b66ead7db9a27f0">More...</a><br /></td></tr>
-<tr class="separator:a2df48b8796f8b1b31b66ead7db9a27f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2138736f41459d0ec8f19d08ee257c69"><td class="memItemLeft" align="right" valign="top"><a id="a2138736f41459d0ec8f19d08ee257c69"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setTraversalVisited</b> (const <a class="el" href="struct_coordinate.html">Coordinate</a> cell)</td></tr>
+<tr class="memitem:a92e20614a8fed75753c3eb9225df1953"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a92e20614a8fed75753c3eb9225df1953">setTraversalVisited</a> (const unsigned int x, const unsigned int y)</td></tr>
+<tr class="memdesc:a92e20614a8fed75753c3eb9225df1953"><td class="mdescLeft">&#160;</td><td class="mdescRight">setTraversalVisited - mark cell x,y as seen by the maze solver  <a href="#a92e20614a8fed75753c3eb9225df1953">More...</a><br /></td></tr>
+<tr class="separator:a92e20614a8fed75753c3eb9225df1953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2138736f41459d0ec8f19d08ee257c69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a2138736f41459d0ec8f19d08ee257c69">setTraversalVisited</a> (const <a class="el" href="struct_coordinate.html">Coordinate</a> cell)</td></tr>
 <tr class="separator:a2138736f41459d0ec8f19d08ee257c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bf44565b5492846b14bfcf3ca344d38"><td class="memItemLeft" align="right" valign="top"><a id="a7bf44565b5492846b14bfcf3ca344d38"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a7bf44565b5492846b14bfcf3ca344d38">resetTraversalVisited</a> ()</td></tr>
-<tr class="memdesc:a7bf44565b5492846b14bfcf3ca344d38"><td class="mdescLeft">&#160;</td><td class="mdescRight">resetTraversalVisited - mark all cells as not visited by maze solver <br /></td></tr>
+<tr class="memitem:a7bf44565b5492846b14bfcf3ca344d38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a7bf44565b5492846b14bfcf3ca344d38">resetTraversalVisited</a> ()</td></tr>
+<tr class="memdesc:a7bf44565b5492846b14bfcf3ca344d38"><td class="mdescLeft">&#160;</td><td class="mdescRight">resetTraversalVisited - mark all cells as not visited by maze solver  <a href="#a7bf44565b5492846b14bfcf3ca344d38">More...</a><br /></td></tr>
 <tr class="separator:a7bf44565b5492846b14bfcf3ca344d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c5e8a0772958f7d369580317ae1c1b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a8c5e8a0772958f7d369580317ae1c1b0">isMazeMapped</a> () const</td></tr>
+<tr class="memdesc:a8c5e8a0772958f7d369580317ae1c1b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">isMazeMapped  <a href="#a8c5e8a0772958f7d369580317ae1c1b0">More...</a><br /></td></tr>
+<tr class="separator:a8c5e8a0772958f7d369580317ae1c1b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a0e8f64de3332f4799f4044ee18fa2038"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a0e8f64de3332f4799f4044ee18fa2038">getDirectionBetweenCells</a> (const <a class="el" href="struct_coordinate.html">Coordinate</a> fromCell, const <a class="el" href="struct_coordinate.html">Coordinate</a> toCell)</td></tr>
+<tr class="memdesc:a0e8f64de3332f4799f4044ee18fa2038"><td class="mdescLeft">&#160;</td><td class="mdescRight">getDirectionBetweenCells get the Cardinal direction between 2 cells The cells must be 1 cell apart, there is no error checking for this  <a href="#a0e8f64de3332f4799f4044ee18fa2038">More...</a><br /></td></tr>
+<tr class="separator:a0e8f64de3332f4799f4044ee18fa2038"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a360493f1845c26e7a86a258e5b61a31a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#a360493f1845c26e7a86a258e5b61a31a">getDirectionBetweenCells</a> (const unsigned int x1, const unsigned int y1, const unsigned int x2, const unsigned int y2)</td></tr>
+<tr class="memdesc:a360493f1845c26e7a86a258e5b61a31a"><td class="mdescLeft">&#160;</td><td class="mdescRight">getDirectionBetweenCells  <a href="#a360493f1845c26e7a86a258e5b61a31a">More...</a><br /></td></tr>
+<tr class="separator:a360493f1845c26e7a86a258e5b61a31a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af451c9c7143883ca8a68c8dd2975a9b5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#af451c9c7143883ca8a68c8dd2975a9b5">adjacentCell</a> (const unsigned int x, const unsigned int y, const <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a> dir)</td></tr>
+<tr class="memdesc:af451c9c7143883ca8a68c8dd2975a9b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">adjacentCell - get the coordinates of the cell to the NSWE of given cell  <a href="#af451c9c7143883ca8a68c8dd2975a9b5">More...</a><br /></td></tr>
+<tr class="separator:af451c9c7143883ca8a68c8dd2975a9b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac068024b5b6dcb77e3bdb66f449990f9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_maze.html#ac068024b5b6dcb77e3bdb66f449990f9">adjacentCell</a> (const <a class="el" href="struct_coordinate.html">Coordinate</a> cell, const <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a> dir)</td></tr>
+<tr class="separator:ac068024b5b6dcb77e3bdb66f449990f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_maze.html" title="The Maze class Keeps track of walls and which cells the mouse (and traversal algorithm) has visited...">Maze</a> class Keeps track of walls and which cells the mouse (and traversal algorithm) has visited. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a075a513416c741a24ab712ca3980a6f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a075a513416c741a24ab712ca3980a6f4">&#9670;&nbsp;</a></span>Maze()</h2>
+<a id="a360f16ac3753cb4e01b695c2f10c79a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a360f16ac3753cb4e01b695c2f10c79a1">&#9670;&nbsp;</a></span>Maze()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Maze::Maze </td>
           <td>(</td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>sizeX</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>sizeY</em>&#160;</td>
         </tr>
         <tr>
@@ -175,6 +192,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p><a class="el" href="class_maze.html" title="The Maze class Keeps track of walls and which cells the mouse (and traversal algorithm) has visited...">Maze</a> - Constructor, adds outer perimeter walls. </p>
@@ -188,17 +210,314 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_maze_a075a513416c741a24ab712ca3980a6f4_cgraph.png" border="0" usemap="#class_maze_a075a513416c741a24ab712ca3980a6f4_cgraph" alt=""/></div>
-<map name="class_maze_a075a513416c741a24ab712ca3980a6f4_cgraph" id="class_maze_a075a513416c741a24ab712ca3980a6f4_cgraph">
-<area shape="rect" id="node2" href="class_maze.html#a0d62900ebfd21548c11c10cc8b3af0af" title="placeWall &#45; puts the &quot;dir&quot; wall at location x, y Does nothing if there is already a wall there ..." alt="" coords="148,5,267,32"/>
+<div class="center"><img src="class_maze_a360f16ac3753cb4e01b695c2f10c79a1_cgraph.png" border="0" usemap="#class_maze_a360f16ac3753cb4e01b695c2f10c79a1_cgraph" alt=""/></div>
+<map name="class_maze_a360f16ac3753cb4e01b695c2f10c79a1_cgraph" id="class_maze_a360f16ac3753cb4e01b695c2f10c79a1_cgraph">
+<area shape="rect" id="node2" href="class_maze.html#a9a4d23ca9b21b943d76fe1c403f934e0" title="placeWall &#45; puts the &quot;dir&quot; wall at location x, y Does nothing if there is already a wall there ..." alt="" coords="148,31,267,57"/>
+<area shape="rect" id="node3" href="class_maze.html#af451c9c7143883ca8a68c8dd2975a9b5" title="adjacentCell &#45; get the coordinates of the cell to the NSWE of given cell " alt="" coords="315,5,448,32"/>
+<area shape="rect" id="node4" href="cardinal8_8h.html#a432604348268c9de2fb4902f1eff6ca9" title="oppositeDirection" alt="" coords="320,56,443,83"/>
 </map>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a19ccd969acb12eaf110264b44dbda74a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19ccd969acb12eaf110264b44dbda74a">&#9670;&nbsp;</a></span>getNeighboringCells()</h2>
+<a id="af451c9c7143883ca8a68c8dd2975a9b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af451c9c7143883ca8a68c8dd2975a9b5">&#9670;&nbsp;</a></span>adjacentCell() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_coordinate.html">Coordinate</a> Maze::adjacentCell </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a>&#160;</td>
+          <td class="paramname"><em>dir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>adjacentCell - get the coordinates of the cell to the NSWE of given cell </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>- given cell's x coordinate </td></tr>
+    <tr><td class="paramname">y</td><td>- given cell's y coordinate </td></tr>
+    <tr><td class="paramname">dir</td><td>- primary cardinal NSWE </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int with 1 of lower 4 bits set</dd></dl>
+<p>North -&gt; least significant bit (LSB) West -&gt; 2nd LSB South -&gt; 3rd LSB East -&gt; 4th LSB </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_maze_af451c9c7143883ca8a68c8dd2975a9b5_icgraph.png" border="0" usemap="#class_maze_af451c9c7143883ca8a68c8dd2975a9b5_icgraph" alt=""/></div>
+<map name="class_maze_af451c9c7143883ca8a68c8dd2975a9b5_icgraph" id="class_maze_af451c9c7143883ca8a68c8dd2975a9b5_icgraph">
+<area shape="rect" id="node2" href="class_breadth_first_g_p_s.html#a768b0dba0132f668c076e011881c4cd5" title="BreadthFirstGPS::getPath" alt="" coords="187,5,361,32"/>
+<area shape="rect" id="node6" href="class_maze.html#ac068024b5b6dcb77e3bdb66f449990f9" title="Maze::adjacentCell" alt="" coords="207,56,341,83"/>
+<area shape="rect" id="node7" href="class_maze.html#a9a4d23ca9b21b943d76fe1c403f934e0" title="placeWall &#45; puts the &quot;dir&quot; wall at location x, y Does nothing if there is already a wall there ..." alt="" coords="215,107,333,133"/>
+<area shape="rect" id="node9" href="class_maze.html#a23d1b2c2db0a101f9a615798ad418f95" title="Maze::getDestinationCell" alt="" coords="412,157,579,184"/>
+<area shape="rect" id="node14" href="class_maze.html#a8f624171682abf4d0b18c24bf3e9620f" title="removeWall &#45; removes the &quot;dir&quot; wall from location x, y Does nothing if there is no wall ..." alt="" coords="209,208,339,235"/>
+<area shape="rect" id="node3" href="class_breadth_first_g_p_s.html#aa2ef67ba04197477b4f156213f9fa34f" title="BreadthFirstGPS::fullPath" alt="" coords="409,5,581,32"/>
+<area shape="rect" id="node4" href="class_breadth_first_g_p_s.html#a2ca618ed6adf5b7fc5912e3984d0906c" title="nextDirection &#45; Request the directions from current cell to New Cell " alt="" coords="629,52,841,79"/>
+<area shape="rect" id="node5" href="class_breadth_first_g_p_s.html#a9696cdc41b6cab4adc8ee689ed56546e" title="BreadthFirstGPS::~Breadth\lFirstGPS" alt="" coords="889,19,1072,61"/>
+<area shape="rect" id="node8" href="class_maze.html#a360f16ac3753cb4e01b695c2f10c79a1" title="Maze &#45; Constructor, adds outer perimeter walls. " alt="" coords="448,56,543,83"/>
+<area shape="rect" id="node13" href="class_navigator.html#a3b87ee20e803f1c51aa826e3a4bebc46" title="map &#45; updateMaze with wall data from Driver generate direction and path of travel from current cell t..." alt="" coords="681,107,789,133"/>
+<area shape="rect" id="node10" href="class_navigator.html#a9bb044b904a3f63238d336999c5a7017" title="Navigator::Navigator" alt="" coords="667,157,803,184"/>
+<area shape="rect" id="node11" href="class_navigator.html#aa0556bf5a6706311470ec46a45c3da47" title="Navigator::optimalRoute" alt="" coords="656,208,815,235"/>
+<area shape="rect" id="node12" href="class_navigator.html#ae67397a343ba76d5cd4407983c2e5f22" title="run &#45; function called by main to either map or travel optimalRoute " alt="" coords="930,133,1031,160"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac068024b5b6dcb77e3bdb66f449990f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac068024b5b6dcb77e3bdb66f449990f9">&#9670;&nbsp;</a></span>adjacentCell() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_coordinate.html">Coordinate</a> Maze::adjacentCell </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>cell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a>&#160;</td>
+          <td class="paramname"><em>dir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_maze_ac068024b5b6dcb77e3bdb66f449990f9_cgraph.png" border="0" usemap="#class_maze_ac068024b5b6dcb77e3bdb66f449990f9_cgraph" alt=""/></div>
+<map name="class_maze_ac068024b5b6dcb77e3bdb66f449990f9_cgraph" id="class_maze_ac068024b5b6dcb77e3bdb66f449990f9_cgraph">
+<area shape="rect" id="node2" href="class_maze.html#af451c9c7143883ca8a68c8dd2975a9b5" title="adjacentCell &#45; get the coordinates of the cell to the NSWE of given cell " alt="" coords="187,5,320,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a23d1b2c2db0a101f9a615798ad418f95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23d1b2c2db0a101f9a615798ad418f95">&#9670;&nbsp;</a></span>getDestinationCell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_coordinate.html">Coordinate</a> Maze::getDestinationCell </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_maze_a23d1b2c2db0a101f9a615798ad418f95_cgraph.png" border="0" usemap="#class_maze_a23d1b2c2db0a101f9a615798ad418f95_cgraph" alt=""/></div>
+<map name="class_maze_a23d1b2c2db0a101f9a615798ad418f95_cgraph" id="class_maze_a23d1b2c2db0a101f9a615798ad418f95_cgraph">
+<area shape="rect" id="node2" href="class_maze.html#a9a4d23ca9b21b943d76fe1c403f934e0" title="placeWall &#45; puts the &quot;dir&quot; wall at location x, y Does nothing if there is already a wall there ..." alt="" coords="252,44,371,71"/>
+<area shape="rect" id="node3" href="class_maze.html#af451c9c7143883ca8a68c8dd2975a9b5" title="adjacentCell &#45; get the coordinates of the cell to the NSWE of given cell " alt="" coords="465,44,599,71"/>
+<area shape="rect" id="node5" href="class_maze.html#a8f624171682abf4d0b18c24bf3e9620f" title="removeWall &#45; removes the &quot;dir&quot; wall from location x, y Does nothing if there is no wall ..." alt="" coords="247,95,376,122"/>
+<area shape="rect" id="node6" href="class_maze.html#a4e5c65f25f273c6403fc17ad0bc85f59" title="isWall &#45; checks whether there is a &quot;dir&quot; wall at location x, y " alt="" coords="262,146,361,172"/>
+<area shape="rect" id="node7" href="class_maze.html#a0e456da6989de605f4bedad3c1d1be14" title="getNeighboringCells &#45; get a list of reachable (no wall) adjacent cells " alt="" coords="223,196,400,223"/>
+<area shape="rect" id="node8" href="class_maze.html#a0e8f64de3332f4799f4044ee18fa2038" title="getDirectionBetweenCells get the Cardinal direction between 2 cells The cells must be 1 cell apart..." alt="" coords="221,248,402,289"/>
+<area shape="rect" id="node9" href="class_maze.html#a74f85fc2c87e4ac956b92286cf81cefb" title="hasMouseVisited &#45; checks if the mouse has visited x, y " alt="" coords="451,339,613,366"/>
+<area shape="rect" id="node10" href="class_maze.html#afc4ab87a6298915e6aba874647b7bd6a" title="setMouseVisited &#45; mark cell x, y as visited by the mouse " alt="" coords="232,364,391,391"/>
+<area shape="rect" id="node11" href="class_maze.html#abe91e9005ae12a9351e364a355aefbf0" title="hasTraversalVisited &#45; checks if the maze solve has seen cell x, y " alt="" coords="224,415,399,442"/>
+<area shape="rect" id="node12" href="class_maze.html#a92e20614a8fed75753c3eb9225df1953" title="setTraversalVisited &#45; mark cell x,y as seen by the maze solver " alt="" coords="226,466,397,492"/>
+<area shape="rect" id="node13" href="class_maze.html#a7bf44565b5492846b14bfcf3ca344d38" title="resetTraversalVisited &#45; mark all cells as not visited by maze solver " alt="" coords="220,516,403,543"/>
+<area shape="rect" id="node14" href="class_maze.html#a8c5e8a0772958f7d369580317ae1c1b0" title="isMazeMapped " alt="" coords="236,567,387,594"/>
+<area shape="rect" id="node4" href="cardinal8_8h.html#a432604348268c9de2fb4902f1eff6ca9" title="oppositeDirection" alt="" coords="471,95,593,122"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_maze_a23d1b2c2db0a101f9a615798ad418f95_icgraph.png" border="0" usemap="#class_maze_a23d1b2c2db0a101f9a615798ad418f95_icgraph" alt=""/></div>
+<map name="class_maze_a23d1b2c2db0a101f9a615798ad418f95_icgraph" id="class_maze_a23d1b2c2db0a101f9a615798ad418f95_icgraph">
+<area shape="rect" id="node2" href="class_navigator.html#a9bb044b904a3f63238d336999c5a7017" title="Navigator::Navigator" alt="" coords="231,5,367,32"/>
+<area shape="rect" id="node3" href="class_navigator.html#aa0556bf5a6706311470ec46a45c3da47" title="Navigator::optimalRoute" alt="" coords="220,56,379,83"/>
+<area shape="rect" id="node4" href="class_navigator.html#ae67397a343ba76d5cd4407983c2e5f22" title="run &#45; function called by main to either map or travel optimalRoute " alt="" coords="427,56,528,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0e8f64de3332f4799f4044ee18fa2038"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e8f64de3332f4799f4044ee18fa2038">&#9670;&nbsp;</a></span>getDirectionBetweenCells() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a> Maze::getDirectionBetweenCells </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>fromCell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>toCell</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getDirectionBetweenCells get the Cardinal direction between 2 cells The cells must be 1 cell apart, there is no error checking for this </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fromCell</td><td>first cell </td></tr>
+    <tr><td class="paramname">toCell</td><td>second cell </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>direction from fromCell to toCell </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_maze_a0e8f64de3332f4799f4044ee18fa2038_icgraph.png" border="0" usemap="#class_maze_a0e8f64de3332f4799f4044ee18fa2038_icgraph" alt=""/></div>
+<map name="class_maze_a0e8f64de3332f4799f4044ee18fa2038_icgraph" id="class_maze_a0e8f64de3332f4799f4044ee18fa2038_icgraph">
+<area shape="rect" id="node2" href="class_breadth_first_g_p_s.html#a853bec4fe3921cdf2c6c8f0d38bfc983" title="BreadthFirstGPS::search" alt="" coords="235,31,403,57"/>
+<area shape="rect" id="node6" href="class_maze.html#a23d1b2c2db0a101f9a615798ad418f95" title="Maze::getDestinationCell" alt="" coords="235,81,402,108"/>
+<area shape="rect" id="node3" href="class_breadth_first_g_p_s.html#aa2ef67ba04197477b4f156213f9fa34f" title="BreadthFirstGPS::fullPath" alt="" coords="451,31,623,57"/>
+<area shape="rect" id="node4" href="class_breadth_first_g_p_s.html#a2ca618ed6adf5b7fc5912e3984d0906c" title="nextDirection &#45; Request the directions from current cell to New Cell " alt="" coords="671,5,883,32"/>
+<area shape="rect" id="node5" href="class_breadth_first_g_p_s.html#a9696cdc41b6cab4adc8ee689ed56546e" title="BreadthFirstGPS::~Breadth\lFirstGPS" alt="" coords="931,23,1113,65"/>
+<area shape="rect" id="node7" href="class_navigator.html#a9bb044b904a3f63238d336999c5a7017" title="Navigator::Navigator" alt="" coords="469,81,605,108"/>
+<area shape="rect" id="node8" href="class_navigator.html#aa0556bf5a6706311470ec46a45c3da47" title="Navigator::optimalRoute" alt="" coords="457,132,616,159"/>
+<area shape="rect" id="node9" href="class_navigator.html#ae67397a343ba76d5cd4407983c2e5f22" title="run &#45; function called by main to either map or travel optimalRoute " alt="" coords="726,132,827,159"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a360493f1845c26e7a86a258e5b61a31a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a360493f1845c26e7a86a258e5b61a31a">&#9670;&nbsp;</a></span>getDirectionBetweenCells() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a> Maze::getDirectionBetweenCells </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>y2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getDirectionBetweenCells </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x1</td><td>x coordinate of 1st cell </td></tr>
+    <tr><td class="paramname">y1</td><td>y coordinate of 1st cell </td></tr>
+    <tr><td class="paramname">x2</td><td>x coordinate of 2nd cell </td></tr>
+    <tr><td class="paramname">y2</td><td>y coordinate of 2nd cell </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Cardinal direction from (x1, y1) to (x2, y2)</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_maze.html#a0e8f64de3332f4799f4044ee18fa2038" title="getDirectionBetweenCells get the Cardinal direction between 2 cells The cells must be 1 cell apart...">getDirectionBetweenCells</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0e456da6989de605f4bedad3c1d1be14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e456da6989de605f4bedad3c1d1be14">&#9670;&nbsp;</a></span>getNeighboringCells() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,13 +525,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">vector&lt; <a class="el" href="struct_coordinate.html">Coordinate</a> &gt; Maze::getNeighboringCells </td>
           <td>(</td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
@@ -233,18 +552,126 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>List of all cells that are reachable from x, y </dd></dl>
 <div class="dynheader">
-Here is the call graph for this function:</div>
+Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_maze_a19ccd969acb12eaf110264b44dbda74a_cgraph.png" border="0" usemap="#class_maze_a19ccd969acb12eaf110264b44dbda74a_cgraph" alt=""/></div>
-<map name="class_maze_a19ccd969acb12eaf110264b44dbda74a_cgraph" id="class_maze_a19ccd969acb12eaf110264b44dbda74a_cgraph">
-<area shape="rect" id="node2" href="class_maze.html#ad533bc963e43ffbeeed5b1d9c2fe368b" title="isWall &#45; checks whether there is a &quot;dir&quot; wall at location x, y " alt="" coords="231,5,329,32"/>
+<div class="center"><img src="class_maze_a0e456da6989de605f4bedad3c1d1be14_icgraph.png" border="0" usemap="#class_maze_a0e456da6989de605f4bedad3c1d1be14_icgraph" alt=""/></div>
+<map name="class_maze_a0e456da6989de605f4bedad3c1d1be14_icgraph" id="class_maze_a0e456da6989de605f4bedad3c1d1be14_icgraph">
+<area shape="rect" id="node2" href="class_breadth_first_g_p_s.html#a853bec4fe3921cdf2c6c8f0d38bfc983" title="BreadthFirstGPS::search" alt="" coords="235,31,403,57"/>
+<area shape="rect" id="node6" href="class_maze.html#a6a57b8f7d3e373a92bff1c22cea3ced8" title="Maze::getNeighboringCells" alt="" coords="231,81,408,108"/>
+<area shape="rect" id="node7" href="class_maze.html#a23d1b2c2db0a101f9a615798ad418f95" title="Maze::getDestinationCell" alt="" coords="236,132,403,159"/>
+<area shape="rect" id="node3" href="class_breadth_first_g_p_s.html#aa2ef67ba04197477b4f156213f9fa34f" title="BreadthFirstGPS::fullPath" alt="" coords="456,31,628,57"/>
+<area shape="rect" id="node4" href="class_breadth_first_g_p_s.html#a2ca618ed6adf5b7fc5912e3984d0906c" title="nextDirection &#45; Request the directions from current cell to New Cell " alt="" coords="676,5,888,32"/>
+<area shape="rect" id="node5" href="class_breadth_first_g_p_s.html#a9696cdc41b6cab4adc8ee689ed56546e" title="BreadthFirstGPS::~Breadth\lFirstGPS" alt="" coords="936,23,1119,65"/>
+<area shape="rect" id="node8" href="class_navigator.html#a9bb044b904a3f63238d336999c5a7017" title="Navigator::Navigator" alt="" coords="474,107,610,133"/>
+<area shape="rect" id="node9" href="class_navigator.html#aa0556bf5a6706311470ec46a45c3da47" title="Navigator::optimalRoute" alt="" coords="463,157,621,184"/>
+<area shape="rect" id="node10" href="class_navigator.html#ae67397a343ba76d5cd4407983c2e5f22" title="run &#45; function called by main to either map or travel optimalRoute " alt="" coords="731,157,833,184"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="aeb1cfb30462b6d207a7d6779383efde0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb1cfb30462b6d207a7d6779383efde0">&#9670;&nbsp;</a></span>hasMouseVisited()</h2>
+<a id="a6a57b8f7d3e373a92bff1c22cea3ced8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a57b8f7d3e373a92bff1c22cea3ced8">&#9670;&nbsp;</a></span>getNeighboringCells() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; <a class="el" href="struct_coordinate.html">Coordinate</a> &gt; Maze::getNeighboringCells </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>cell</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_maze_a6a57b8f7d3e373a92bff1c22cea3ced8_cgraph.png" border="0" usemap="#class_maze_a6a57b8f7d3e373a92bff1c22cea3ced8_cgraph" alt=""/></div>
+<map name="class_maze_a6a57b8f7d3e373a92bff1c22cea3ced8_cgraph" id="class_maze_a6a57b8f7d3e373a92bff1c22cea3ced8_cgraph">
+<area shape="rect" id="node2" href="class_maze.html#a0e456da6989de605f4bedad3c1d1be14" title="getNeighboringCells &#45; get a list of reachable (no wall) adjacent cells " alt="" coords="231,5,408,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac6ae469ccecdb03695c1e64aa44e4ed7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6ae469ccecdb03695c1e64aa44e4ed7">&#9670;&nbsp;</a></span>getSizeX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Maze::getSizeX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_maze_ac6ae469ccecdb03695c1e64aa44e4ed7_icgraph.png" border="0" usemap="#class_maze_ac6ae469ccecdb03695c1e64aa44e4ed7_icgraph" alt=""/></div>
+<map name="class_maze_ac6ae469ccecdb03695c1e64aa44e4ed7_icgraph" id="class_maze_ac6ae469ccecdb03695c1e64aa44e4ed7_icgraph">
+<area shape="rect" id="node2" href="class_breadth_first_g_p_s.html#a853bec4fe3921cdf2c6c8f0d38bfc983" title="BreadthFirstGPS::search" alt="" coords="167,31,335,57"/>
+<area shape="rect" id="node6" href="class_navigator.html#a9bb044b904a3f63238d336999c5a7017" title="Navigator::Navigator" alt="" coords="183,81,319,108"/>
+<area shape="rect" id="node3" href="class_breadth_first_g_p_s.html#aa2ef67ba04197477b4f156213f9fa34f" title="BreadthFirstGPS::fullPath" alt="" coords="383,31,555,57"/>
+<area shape="rect" id="node4" href="class_breadth_first_g_p_s.html#a2ca618ed6adf5b7fc5912e3984d0906c" title="nextDirection &#45; Request the directions from current cell to New Cell " alt="" coords="603,5,815,32"/>
+<area shape="rect" id="node5" href="class_breadth_first_g_p_s.html#a9696cdc41b6cab4adc8ee689ed56546e" title="BreadthFirstGPS::~Breadth\lFirstGPS" alt="" coords="863,23,1045,65"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a979f3bed722d43573e44fe08f4465407"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a979f3bed722d43573e44fe08f4465407">&#9670;&nbsp;</a></span>getSizeY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Maze::getSizeY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_maze_a979f3bed722d43573e44fe08f4465407_icgraph.png" border="0" usemap="#class_maze_a979f3bed722d43573e44fe08f4465407_icgraph" alt=""/></div>
+<map name="class_maze_a979f3bed722d43573e44fe08f4465407_icgraph" id="class_maze_a979f3bed722d43573e44fe08f4465407_icgraph">
+<area shape="rect" id="node2" href="class_breadth_first_g_p_s.html#a853bec4fe3921cdf2c6c8f0d38bfc983" title="BreadthFirstGPS::search" alt="" coords="168,31,336,57"/>
+<area shape="rect" id="node6" href="class_navigator.html#a9bb044b904a3f63238d336999c5a7017" title="Navigator::Navigator" alt="" coords="184,81,320,108"/>
+<area shape="rect" id="node3" href="class_breadth_first_g_p_s.html#aa2ef67ba04197477b4f156213f9fa34f" title="BreadthFirstGPS::fullPath" alt="" coords="384,31,556,57"/>
+<area shape="rect" id="node4" href="class_breadth_first_g_p_s.html#a2ca618ed6adf5b7fc5912e3984d0906c" title="nextDirection &#45; Request the directions from current cell to New Cell " alt="" coords="604,5,816,32"/>
+<area shape="rect" id="node5" href="class_breadth_first_g_p_s.html#a9696cdc41b6cab4adc8ee689ed56546e" title="BreadthFirstGPS::~Breadth\lFirstGPS" alt="" coords="864,23,1047,65"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a74f85fc2c87e4ac956b92286cf81cefb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74f85fc2c87e4ac956b92286cf81cefb">&#9670;&nbsp;</a></span>hasMouseVisited() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,13 +679,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool Maze::hasMouseVisited </td>
           <td>(</td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
@@ -278,11 +705,52 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the mouse has visited x, y </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_maze_a74f85fc2c87e4ac956b92286cf81cefb_icgraph.png" border="0" usemap="#class_maze_a74f85fc2c87e4ac956b92286cf81cefb_icgraph" alt=""/></div>
+<map name="class_maze_a74f85fc2c87e4ac956b92286cf81cefb_icgraph" id="class_maze_a74f85fc2c87e4ac956b92286cf81cefb_icgraph">
+<area shape="rect" id="node2" href="class_maze.html#a3d1c9574c636286d43cf326909a369fc" title="Maze::hasMouseVisited" alt="" coords="216,5,379,32"/>
+<area shape="rect" id="node3" href="class_maze.html#afc4ab87a6298915e6aba874647b7bd6a" title="setMouseVisited &#45; mark cell x, y as visited by the mouse " alt="" coords="218,56,377,83"/>
+<area shape="rect" id="node5" href="class_maze.html#a23d1b2c2db0a101f9a615798ad418f95" title="Maze::getDestinationCell" alt="" coords="427,107,593,133"/>
+<area shape="rect" id="node6" href="class_navigator.html#a9bb044b904a3f63238d336999c5a7017" title="Navigator::Navigator" alt="" coords="653,157,789,184"/>
+<area shape="rect" id="node4" href="class_maze.html#ac62ccbdbfac4073f1f33ec8a8d6d3ce8" title="Maze::setMouseVisited" alt="" coords="431,5,589,32"/>
+<area shape="rect" id="node9" href="class_navigator.html#a3b87ee20e803f1c51aa826e3a4bebc46" title="map &#45; updateMaze with wall data from Driver generate direction and path of travel from current cell t..." alt="" coords="667,56,775,83"/>
+<area shape="rect" id="node7" href="class_navigator.html#aa0556bf5a6706311470ec46a45c3da47" title="Navigator::optimalRoute" alt="" coords="641,107,800,133"/>
+<area shape="rect" id="node8" href="class_navigator.html#ae67397a343ba76d5cd4407983c2e5f22" title="run &#45; function called by main to either map or travel optimalRoute " alt="" coords="848,81,949,108"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="a53696c4a66b6a3d506b9e94a913e43eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53696c4a66b6a3d506b9e94a913e43eb">&#9670;&nbsp;</a></span>hasTraversalVisited()</h2>
+<a id="a3d1c9574c636286d43cf326909a369fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d1c9574c636286d43cf326909a369fc">&#9670;&nbsp;</a></span>hasMouseVisited() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Maze::hasMouseVisited </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>cell</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_maze_a3d1c9574c636286d43cf326909a369fc_cgraph.png" border="0" usemap="#class_maze_a3d1c9574c636286d43cf326909a369fc_cgraph" alt=""/></div>
+<map name="class_maze_a3d1c9574c636286d43cf326909a369fc_cgraph" id="class_maze_a3d1c9574c636286d43cf326909a369fc_cgraph">
+<area shape="rect" id="node2" href="class_maze.html#a74f85fc2c87e4ac956b92286cf81cefb" title="hasMouseVisited &#45; checks if the mouse has visited x, y " alt="" coords="216,5,379,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abe91e9005ae12a9351e364a355aefbf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe91e9005ae12a9351e364a355aefbf0">&#9670;&nbsp;</a></span>hasTraversalVisited() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -290,13 +758,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool Maze::hasTraversalVisited </td>
           <td>(</td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
@@ -316,11 +784,85 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the maze solver has seen this cell </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_maze_abe91e9005ae12a9351e364a355aefbf0_icgraph.png" border="0" usemap="#class_maze_abe91e9005ae12a9351e364a355aefbf0_icgraph" alt=""/></div>
+<map name="class_maze_abe91e9005ae12a9351e364a355aefbf0_icgraph" id="class_maze_abe91e9005ae12a9351e364a355aefbf0_icgraph">
+<area shape="rect" id="node2" href="class_breadth_first_g_p_s.html#a853bec4fe3921cdf2c6c8f0d38bfc983" title="BreadthFirstGPS::search" alt="" coords="231,31,399,57"/>
+<area shape="rect" id="node6" href="class_maze.html#a7f7e1536f6d8f5606054c6cc1cfa2d7d" title="Maze::hasTraversalVisited" alt="" coords="228,81,403,108"/>
+<area shape="rect" id="node7" href="class_maze.html#a23d1b2c2db0a101f9a615798ad418f95" title="Maze::getDestinationCell" alt="" coords="232,132,399,159"/>
+<area shape="rect" id="node3" href="class_breadth_first_g_p_s.html#aa2ef67ba04197477b4f156213f9fa34f" title="BreadthFirstGPS::fullPath" alt="" coords="451,31,623,57"/>
+<area shape="rect" id="node4" href="class_breadth_first_g_p_s.html#a2ca618ed6adf5b7fc5912e3984d0906c" title="nextDirection &#45; Request the directions from current cell to New Cell " alt="" coords="671,5,883,32"/>
+<area shape="rect" id="node5" href="class_breadth_first_g_p_s.html#a9696cdc41b6cab4adc8ee689ed56546e" title="BreadthFirstGPS::~Breadth\lFirstGPS" alt="" coords="931,23,1113,65"/>
+<area shape="rect" id="node8" href="class_navigator.html#a9bb044b904a3f63238d336999c5a7017" title="Navigator::Navigator" alt="" coords="469,107,605,133"/>
+<area shape="rect" id="node9" href="class_navigator.html#aa0556bf5a6706311470ec46a45c3da47" title="Navigator::optimalRoute" alt="" coords="457,157,616,184"/>
+<area shape="rect" id="node10" href="class_navigator.html#ae67397a343ba76d5cd4407983c2e5f22" title="run &#45; function called by main to either map or travel optimalRoute " alt="" coords="726,157,827,184"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="ad533bc963e43ffbeeed5b1d9c2fe368b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad533bc963e43ffbeeed5b1d9c2fe368b">&#9670;&nbsp;</a></span>isWall()</h2>
+<a id="a7f7e1536f6d8f5606054c6cc1cfa2d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f7e1536f6d8f5606054c6cc1cfa2d7d">&#9670;&nbsp;</a></span>hasTraversalVisited() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Maze::hasTraversalVisited </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>cell</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_maze_a7f7e1536f6d8f5606054c6cc1cfa2d7d_cgraph.png" border="0" usemap="#class_maze_a7f7e1536f6d8f5606054c6cc1cfa2d7d_cgraph" alt=""/></div>
+<map name="class_maze_a7f7e1536f6d8f5606054c6cc1cfa2d7d_cgraph" id="class_maze_a7f7e1536f6d8f5606054c6cc1cfa2d7d_cgraph">
+<area shape="rect" id="node2" href="class_maze.html#abe91e9005ae12a9351e364a355aefbf0" title="hasTraversalVisited &#45; checks if the maze solve has seen cell x, y " alt="" coords="228,5,403,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8c5e8a0772958f7d369580317ae1c1b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c5e8a0772958f7d369580317ae1c1b0">&#9670;&nbsp;</a></span>isMazeMapped()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Maze::isMazeMapped </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>isMazeMapped </p>
+<dl class="section return"><dt>Returns</dt><dd>true if all cells have been visited </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_maze_a8c5e8a0772958f7d369580317ae1c1b0_icgraph.png" border="0" usemap="#class_maze_a8c5e8a0772958f7d369580317ae1c1b0_icgraph" alt=""/></div>
+<map name="class_maze_a8c5e8a0772958f7d369580317ae1c1b0_icgraph" id="class_maze_a8c5e8a0772958f7d369580317ae1c1b0_icgraph">
+<area shape="rect" id="node2" href="class_maze.html#a23d1b2c2db0a101f9a615798ad418f95" title="Maze::getDestinationCell" alt="" coords="204,56,371,83"/>
+<area shape="rect" id="node5" href="class_navigator.html#ae67397a343ba76d5cd4407983c2e5f22" title="run &#45; function called by main to either map or travel optimalRoute " alt="" coords="625,107,727,133"/>
+<area shape="rect" id="node6" href="class_navigator.html#a3b87ee20e803f1c51aa826e3a4bebc46" title="map &#45; updateMaze with wall data from Driver generate direction and path of travel from current cell t..." alt="" coords="233,157,341,184"/>
+<area shape="rect" id="node3" href="class_navigator.html#a9bb044b904a3f63238d336999c5a7017" title="Navigator::Navigator" alt="" coords="430,5,566,32"/>
+<area shape="rect" id="node4" href="class_navigator.html#aa0556bf5a6706311470ec46a45c3da47" title="Navigator::optimalRoute" alt="" coords="419,56,577,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4e5c65f25f273c6403fc17ad0bc85f59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e5c65f25f273c6403fc17ad0bc85f59">&#9670;&nbsp;</a></span>isWall() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -328,19 +870,19 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool Maze::isWall </td>
           <td>(</td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Cardinal8&#160;</td>
+          <td class="paramtype">const <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a>&#160;</td>
           <td class="paramname"><em>dir</em>&#160;</td>
         </tr>
         <tr>
@@ -364,16 +906,59 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_maze_ad533bc963e43ffbeeed5b1d9c2fe368b_icgraph.png" border="0" usemap="#class_maze_ad533bc963e43ffbeeed5b1d9c2fe368b_icgraph" alt=""/></div>
-<map name="class_maze_ad533bc963e43ffbeeed5b1d9c2fe368b_icgraph" id="class_maze_ad533bc963e43ffbeeed5b1d9c2fe368b_icgraph">
-<area shape="rect" id="node2" href="class_maze.html#a19ccd969acb12eaf110264b44dbda74a" title="getNeighboringCells &#45; get a list of reachable (no wall) adjacent cells " alt="" coords="152,5,329,32"/>
+<div class="center"><img src="class_maze_a4e5c65f25f273c6403fc17ad0bc85f59_icgraph.png" border="0" usemap="#class_maze_a4e5c65f25f273c6403fc17ad0bc85f59_icgraph" alt=""/></div>
+<map name="class_maze_a4e5c65f25f273c6403fc17ad0bc85f59_icgraph" id="class_maze_a4e5c65f25f273c6403fc17ad0bc85f59_icgraph">
+<area shape="rect" id="node2" href="class_maze.html#a23d1b2c2db0a101f9a615798ad418f95" title="Maze::getDestinationCell" alt="" coords="152,31,319,57"/>
+<area shape="rect" id="node3" href="class_navigator.html#a9bb044b904a3f63238d336999c5a7017" title="Navigator::Navigator" alt="" coords="378,5,514,32"/>
+<area shape="rect" id="node4" href="class_navigator.html#aa0556bf5a6706311470ec46a45c3da47" title="Navigator::optimalRoute" alt="" coords="367,56,525,83"/>
+<area shape="rect" id="node5" href="class_navigator.html#ae67397a343ba76d5cd4407983c2e5f22" title="run &#45; function called by main to either map or travel optimalRoute " alt="" coords="573,56,675,83"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a0d62900ebfd21548c11c10cc8b3af0af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d62900ebfd21548c11c10cc8b3af0af">&#9670;&nbsp;</a></span>placeWall()</h2>
+<a id="a9aa2fa8348fc1bda4ee9c0e197eef958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aa2fa8348fc1bda4ee9c0e197eef958">&#9670;&nbsp;</a></span>isWall() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Maze::isWall </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>y2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a4d23ca9b21b943d76fe1c403f934e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a4d23ca9b21b943d76fe1c403f934e0">&#9670;&nbsp;</a></span>placeWall()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -381,19 +966,19 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void Maze::placeWall </td>
           <td>(</td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Cardinal8&#160;</td>
+          <td class="paramtype">const <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a>&#160;</td>
           <td class="paramname"><em>dir</em>&#160;</td>
         </tr>
         <tr>
@@ -414,18 +999,32 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_maze_a9a4d23ca9b21b943d76fe1c403f934e0_cgraph.png" border="0" usemap="#class_maze_a9a4d23ca9b21b943d76fe1c403f934e0_cgraph" alt=""/></div>
+<map name="class_maze_a9a4d23ca9b21b943d76fe1c403f934e0_cgraph" id="class_maze_a9a4d23ca9b21b943d76fe1c403f934e0_cgraph">
+<area shape="rect" id="node2" href="class_maze.html#af451c9c7143883ca8a68c8dd2975a9b5" title="adjacentCell &#45; get the coordinates of the cell to the NSWE of given cell " alt="" coords="172,5,305,32"/>
+<area shape="rect" id="node3" href="cardinal8_8h.html#a432604348268c9de2fb4902f1eff6ca9" title="oppositeDirection" alt="" coords="177,56,300,83"/>
+</map>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_maze_a0d62900ebfd21548c11c10cc8b3af0af_icgraph.png" border="0" usemap="#class_maze_a0d62900ebfd21548c11c10cc8b3af0af_icgraph" alt=""/></div>
-<map name="class_maze_a0d62900ebfd21548c11c10cc8b3af0af_icgraph" id="class_maze_a0d62900ebfd21548c11c10cc8b3af0af_icgraph">
-<area shape="rect" id="node2" href="class_maze.html#a075a513416c741a24ab712ca3980a6f4" title="Maze &#45; Constructor, adds outer perimeter walls. " alt="" coords="172,5,267,32"/>
+<div class="center"><img src="class_maze_a9a4d23ca9b21b943d76fe1c403f934e0_icgraph.png" border="0" usemap="#class_maze_a9a4d23ca9b21b943d76fe1c403f934e0_icgraph" alt=""/></div>
+<map name="class_maze_a9a4d23ca9b21b943d76fe1c403f934e0_icgraph" id="class_maze_a9a4d23ca9b21b943d76fe1c403f934e0_icgraph">
+<area shape="rect" id="node2" href="class_maze.html#a360f16ac3753cb4e01b695c2f10c79a1" title="Maze &#45; Constructor, adds outer perimeter walls. " alt="" coords="208,5,303,32"/>
+<area shape="rect" id="node3" href="class_maze.html#a23d1b2c2db0a101f9a615798ad418f95" title="Maze::getDestinationCell" alt="" coords="172,56,339,83"/>
+<area shape="rect" id="node7" href="class_navigator.html#a3b87ee20e803f1c51aa826e3a4bebc46" title="map &#45; updateMaze with wall data from Driver generate direction and path of travel from current cell t..." alt="" coords="412,107,520,133"/>
+<area shape="rect" id="node4" href="class_navigator.html#a9bb044b904a3f63238d336999c5a7017" title="Navigator::Navigator" alt="" coords="398,5,534,32"/>
+<area shape="rect" id="node5" href="class_navigator.html#aa0556bf5a6706311470ec46a45c3da47" title="Navigator::optimalRoute" alt="" coords="387,56,545,83"/>
+<area shape="rect" id="node6" href="class_navigator.html#ae67397a343ba76d5cd4407983c2e5f22" title="run &#45; function called by main to either map or travel optimalRoute " alt="" coords="593,81,695,108"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a31134b07b434ec2ebe43a57c3d4104a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31134b07b434ec2ebe43a57c3d4104a7">&#9670;&nbsp;</a></span>removeWall()</h2>
+<a id="a8f624171682abf4d0b18c24bf3e9620f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f624171682abf4d0b18c24bf3e9620f">&#9670;&nbsp;</a></span>removeWall()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -433,19 +1032,19 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void Maze::removeWall </td>
           <td>(</td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Cardinal8&#160;</td>
+          <td class="paramtype">const <a class="el" href="cardinal8_8h.html#a2ac31b6f591505e43ca6c3564e8de88a">Cardinal8</a>&#160;</td>
           <td class="paramname"><em>dir</em>&#160;</td>
         </tr>
         <tr>
@@ -465,11 +1064,61 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_maze_a8f624171682abf4d0b18c24bf3e9620f_cgraph.png" border="0" usemap="#class_maze_a8f624171682abf4d0b18c24bf3e9620f_cgraph" alt=""/></div>
+<map name="class_maze_a8f624171682abf4d0b18c24bf3e9620f_cgraph" id="class_maze_a8f624171682abf4d0b18c24bf3e9620f_cgraph">
+<area shape="rect" id="node2" href="class_maze.html#af451c9c7143883ca8a68c8dd2975a9b5" title="adjacentCell &#45; get the coordinates of the cell to the NSWE of given cell " alt="" coords="183,5,316,32"/>
+<area shape="rect" id="node3" href="cardinal8_8h.html#a432604348268c9de2fb4902f1eff6ca9" title="oppositeDirection" alt="" coords="188,56,311,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_maze_a8f624171682abf4d0b18c24bf3e9620f_icgraph.png" border="0" usemap="#class_maze_a8f624171682abf4d0b18c24bf3e9620f_icgraph" alt=""/></div>
+<map name="class_maze_a8f624171682abf4d0b18c24bf3e9620f_icgraph" id="class_maze_a8f624171682abf4d0b18c24bf3e9620f_icgraph">
+<area shape="rect" id="node2" href="class_maze.html#a23d1b2c2db0a101f9a615798ad418f95" title="Maze::getDestinationCell" alt="" coords="183,31,349,57"/>
+<area shape="rect" id="node3" href="class_navigator.html#a9bb044b904a3f63238d336999c5a7017" title="Navigator::Navigator" alt="" coords="409,5,545,32"/>
+<area shape="rect" id="node4" href="class_navigator.html#aa0556bf5a6706311470ec46a45c3da47" title="Navigator::optimalRoute" alt="" coords="397,56,556,83"/>
+<area shape="rect" id="node5" href="class_navigator.html#ae67397a343ba76d5cd4407983c2e5f22" title="run &#45; function called by main to either map or travel optimalRoute " alt="" coords="604,56,705,83"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="ac2405374c6e1e55bee27d5ad0e4fdb62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2405374c6e1e55bee27d5ad0e4fdb62">&#9670;&nbsp;</a></span>setMouseVisited()</h2>
+<a id="a7bf44565b5492846b14bfcf3ca344d38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bf44565b5492846b14bfcf3ca344d38">&#9670;&nbsp;</a></span>resetTraversalVisited()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Maze::resetTraversalVisited </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>resetTraversalVisited - mark all cells as not visited by maze solver </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_maze_a7bf44565b5492846b14bfcf3ca344d38_icgraph.png" border="0" usemap="#class_maze_a7bf44565b5492846b14bfcf3ca344d38_icgraph" alt=""/></div>
+<map name="class_maze_a7bf44565b5492846b14bfcf3ca344d38_icgraph" id="class_maze_a7bf44565b5492846b14bfcf3ca344d38_icgraph">
+<area shape="rect" id="node2" href="class_maze.html#a23d1b2c2db0a101f9a615798ad418f95" title="Maze::getDestinationCell" alt="" coords="236,31,403,57"/>
+<area shape="rect" id="node3" href="class_navigator.html#a9bb044b904a3f63238d336999c5a7017" title="Navigator::Navigator" alt="" coords="462,5,598,32"/>
+<area shape="rect" id="node4" href="class_navigator.html#aa0556bf5a6706311470ec46a45c3da47" title="Navigator::optimalRoute" alt="" coords="451,56,609,83"/>
+<area shape="rect" id="node5" href="class_navigator.html#ae67397a343ba76d5cd4407983c2e5f22" title="run &#45; function called by main to either map or travel optimalRoute " alt="" coords="657,56,759,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afc4ab87a6298915e6aba874647b7bd6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc4ab87a6298915e6aba874647b7bd6a">&#9670;&nbsp;</a></span>setMouseVisited() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -477,13 +1126,13 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void Maze::setMouseVisited </td>
           <td>(</td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
@@ -503,18 +1152,58 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_maze_afc4ab87a6298915e6aba874647b7bd6a_cgraph.png" border="0" usemap="#class_maze_afc4ab87a6298915e6aba874647b7bd6a_cgraph" alt=""/></div>
+<map name="class_maze_afc4ab87a6298915e6aba874647b7bd6a_cgraph" id="class_maze_afc4ab87a6298915e6aba874647b7bd6a_cgraph">
+<area shape="rect" id="node2" href="class_maze.html#a74f85fc2c87e4ac956b92286cf81cefb" title="hasMouseVisited &#45; checks if the mouse has visited x, y " alt="" coords="212,5,375,32"/>
+</map>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_maze_ac2405374c6e1e55bee27d5ad0e4fdb62_icgraph.png" border="0" usemap="#class_maze_ac2405374c6e1e55bee27d5ad0e4fdb62_icgraph" alt=""/></div>
-<map name="class_maze_ac2405374c6e1e55bee27d5ad0e4fdb62_icgraph" id="class_maze_ac2405374c6e1e55bee27d5ad0e4fdb62_icgraph">
-<area shape="rect" id="node2" href="class_maze.html#a2df48b8796f8b1b31b66ead7db9a27f0" title="setTraversalVisited &#45; mark cell x,y as seen by the maze solver " alt="" coords="212,5,383,32"/>
+<div class="center"><img src="class_maze_afc4ab87a6298915e6aba874647b7bd6a_icgraph.png" border="0" usemap="#class_maze_afc4ab87a6298915e6aba874647b7bd6a_icgraph" alt=""/></div>
+<map name="class_maze_afc4ab87a6298915e6aba874647b7bd6a_icgraph" id="class_maze_afc4ab87a6298915e6aba874647b7bd6a_icgraph">
+<area shape="rect" id="node2" href="class_maze.html#ac62ccbdbfac4073f1f33ec8a8d6d3ce8" title="Maze::setMouseVisited" alt="" coords="216,5,375,32"/>
+<area shape="rect" id="node3" href="class_maze.html#a23d1b2c2db0a101f9a615798ad418f95" title="Maze::getDestinationCell" alt="" coords="212,56,379,83"/>
+<area shape="rect" id="node7" href="class_navigator.html#a3b87ee20e803f1c51aa826e3a4bebc46" title="map &#45; updateMaze with wall data from Driver generate direction and path of travel from current cell t..." alt="" coords="452,107,560,133"/>
+<area shape="rect" id="node4" href="class_navigator.html#a9bb044b904a3f63238d336999c5a7017" title="Navigator::Navigator" alt="" coords="438,5,574,32"/>
+<area shape="rect" id="node5" href="class_navigator.html#aa0556bf5a6706311470ec46a45c3da47" title="Navigator::optimalRoute" alt="" coords="427,56,585,83"/>
+<area shape="rect" id="node6" href="class_navigator.html#ae67397a343ba76d5cd4407983c2e5f22" title="run &#45; function called by main to either map or travel optimalRoute " alt="" coords="633,81,735,108"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a2df48b8796f8b1b31b66ead7db9a27f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2df48b8796f8b1b31b66ead7db9a27f0">&#9670;&nbsp;</a></span>setTraversalVisited()</h2>
+<a id="ac62ccbdbfac4073f1f33ec8a8d6d3ce8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac62ccbdbfac4073f1f33ec8a8d6d3ce8">&#9670;&nbsp;</a></span>setMouseVisited() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Maze::setMouseVisited </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>cell</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_maze_ac62ccbdbfac4073f1f33ec8a8d6d3ce8_cgraph.png" border="0" usemap="#class_maze_ac62ccbdbfac4073f1f33ec8a8d6d3ce8_cgraph" alt=""/></div>
+<map name="class_maze_ac62ccbdbfac4073f1f33ec8a8d6d3ce8_cgraph" id="class_maze_ac62ccbdbfac4073f1f33ec8a8d6d3ce8_cgraph">
+<area shape="rect" id="node2" href="class_maze.html#afc4ab87a6298915e6aba874647b7bd6a" title="setMouseVisited &#45; mark cell x, y as visited by the mouse " alt="" coords="212,5,371,32"/>
+<area shape="rect" id="node3" href="class_maze.html#a74f85fc2c87e4ac956b92286cf81cefb" title="hasMouseVisited &#45; checks if the mouse has visited x, y " alt="" coords="419,5,581,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a92e20614a8fed75753c3eb9225df1953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92e20614a8fed75753c3eb9225df1953">&#9670;&nbsp;</a></span>setTraversalVisited() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -522,13 +1211,13 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void Maze::setTraversalVisited </td>
           <td>(</td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
@@ -548,19 +1237,53 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_maze_a92e20614a8fed75753c3eb9225df1953_icgraph.png" border="0" usemap="#class_maze_a92e20614a8fed75753c3eb9225df1953_icgraph" alt=""/></div>
+<map name="class_maze_a92e20614a8fed75753c3eb9225df1953_icgraph" id="class_maze_a92e20614a8fed75753c3eb9225df1953_icgraph">
+<area shape="rect" id="node2" href="class_breadth_first_g_p_s.html#a853bec4fe3921cdf2c6c8f0d38bfc983" title="BreadthFirstGPS::search" alt="" coords="225,31,393,57"/>
+<area shape="rect" id="node6" href="class_maze.html#a2138736f41459d0ec8f19d08ee257c69" title="Maze::setTraversalVisited" alt="" coords="224,81,395,108"/>
+<area shape="rect" id="node7" href="class_maze.html#a23d1b2c2db0a101f9a615798ad418f95" title="Maze::getDestinationCell" alt="" coords="226,132,393,159"/>
+<area shape="rect" id="node3" href="class_breadth_first_g_p_s.html#aa2ef67ba04197477b4f156213f9fa34f" title="BreadthFirstGPS::fullPath" alt="" coords="443,31,615,57"/>
+<area shape="rect" id="node4" href="class_breadth_first_g_p_s.html#a2ca618ed6adf5b7fc5912e3984d0906c" title="nextDirection &#45; Request the directions from current cell to New Cell " alt="" coords="663,5,875,32"/>
+<area shape="rect" id="node5" href="class_breadth_first_g_p_s.html#a9696cdc41b6cab4adc8ee689ed56546e" title="BreadthFirstGPS::~Breadth\lFirstGPS" alt="" coords="923,23,1105,65"/>
+<area shape="rect" id="node8" href="class_navigator.html#a9bb044b904a3f63238d336999c5a7017" title="Navigator::Navigator" alt="" coords="461,107,597,133"/>
+<area shape="rect" id="node9" href="class_navigator.html#aa0556bf5a6706311470ec46a45c3da47" title="Navigator::optimalRoute" alt="" coords="449,157,608,184"/>
+<area shape="rect" id="node10" href="class_navigator.html#ae67397a343ba76d5cd4407983c2e5f22" title="run &#45; function called by main to either map or travel optimalRoute " alt="" coords="718,157,819,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2138736f41459d0ec8f19d08ee257c69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2138736f41459d0ec8f19d08ee257c69">&#9670;&nbsp;</a></span>setTraversalVisited() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Maze::setTraversalVisited </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_coordinate.html">Coordinate</a>&#160;</td>
+          <td class="paramname"><em>cell</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_maze_a2df48b8796f8b1b31b66ead7db9a27f0_cgraph.png" border="0" usemap="#class_maze_a2df48b8796f8b1b31b66ead7db9a27f0_cgraph" alt=""/></div>
-<map name="class_maze_a2df48b8796f8b1b31b66ead7db9a27f0_cgraph" id="class_maze_a2df48b8796f8b1b31b66ead7db9a27f0_cgraph">
-<area shape="rect" id="node2" href="class_maze.html#ac2405374c6e1e55bee27d5ad0e4fdb62" title="setMouseVisited &#45; mark cell x, y as visited by the mouse " alt="" coords="224,5,383,32"/>
+<div class="center"><img src="class_maze_a2138736f41459d0ec8f19d08ee257c69_cgraph.png" border="0" usemap="#class_maze_a2138736f41459d0ec8f19d08ee257c69_cgraph" alt=""/></div>
+<map name="class_maze_a2138736f41459d0ec8f19d08ee257c69_cgraph" id="class_maze_a2138736f41459d0ec8f19d08ee257c69_cgraph">
+<area shape="rect" id="node2" href="class_maze.html#a92e20614a8fed75753c3eb9225df1953" title="setTraversalVisited &#45; mark cell x,y as seen by the maze solver " alt="" coords="224,5,395,32"/>
 </map>
 </div>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Tyler/workspace/YSU-Micromouse-SAC-2017/src/src/<a class="el" href="maze_8h_source.html">maze.h</a></li>
-<li>C:/Users/Tyler/workspace/YSU-Micromouse-SAC-2017/src/src/maze.cpp</li>
+<li>C:/Users/Phill/workspace/YSU-Micromouse-SAC-2017/src/src/<a class="el" href="maze_8h_source.html">maze.h</a></li>
+<li>C:/Users/Phill/workspace/YSU-Micromouse-SAC-2017/src/src/<a class="el" href="maze_8cpp.html">maze.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

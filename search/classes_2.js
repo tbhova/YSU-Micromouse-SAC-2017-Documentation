@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['driver',['Driver',['../class_driver.html',1,'']]]
+  ['coordinate',['Coordinate',['../struct_coordinate.html',1,'']]]
 ];

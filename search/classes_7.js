@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['navigator',['Navigator',['../class_navigator.html',1,'']]]
+  ['maze',['Maze',['../class_maze.html',1,'']]],
+  ['motors',['Motors',['../class_motors.html',1,'']]]
 ];

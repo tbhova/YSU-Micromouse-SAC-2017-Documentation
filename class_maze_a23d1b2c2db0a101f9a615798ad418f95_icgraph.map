@@ -1,0 +1,5 @@
+<map id="Maze::getDestinationCell" name="Maze::getDestinationCell">
+<area shape="rect" id="node2" href="$class_navigator.html#a9bb044b904a3f63238d336999c5a7017" title="Navigator::Navigator" alt="" coords="231,5,367,32"/>
+<area shape="rect" id="node3" href="$class_navigator.html#aa0556bf5a6706311470ec46a45c3da47" title="Navigator::optimalRoute" alt="" coords="220,56,379,83"/>
+<area shape="rect" id="node4" href="$class_navigator.html#ae67397a343ba76d5cd4407983c2e5f22" title="run &#45; function called by main to either map or travel optimalRoute " alt="" coords="427,56,528,83"/>
+</map>

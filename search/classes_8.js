@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['stopgodriver',['StopGoDriver',['../class_stop_go_driver.html',1,'']]]
+  ['navigator',['Navigator',['../class_navigator.html',1,'']]]
 ];

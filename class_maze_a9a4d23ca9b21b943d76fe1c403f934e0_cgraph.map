@@ -1,0 +1,4 @@
+<map id="Maze::placeWall" name="Maze::placeWall">
+<area shape="rect" id="node2" href="$class_maze.html#af451c9c7143883ca8a68c8dd2975a9b5" title="adjacentCell &#45; get the coordinates of the cell to the NSWE of given cell " alt="" coords="172,5,305,32"/>
+<area shape="rect" id="node3" href="$cardinal8_8h.html#a432604348268c9de2fb4902f1eff6ca9" title="oppositeDirection" alt="" coords="177,56,300,83"/>
+</map>

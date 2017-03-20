@@ -1,0 +1,6 @@
+<map id="Maze::removeWall" name="Maze::removeWall">
+<area shape="rect" id="node2" href="$class_maze.html#a23d1b2c2db0a101f9a615798ad418f95" title="Maze::getDestinationCell" alt="" coords="183,31,349,57"/>
+<area shape="rect" id="node3" href="$class_navigator.html#a9bb044b904a3f63238d336999c5a7017" title="Navigator::Navigator" alt="" coords="409,5,545,32"/>
+<area shape="rect" id="node4" href="$class_navigator.html#aa0556bf5a6706311470ec46a45c3da47" title="Navigator::optimalRoute" alt="" coords="397,56,556,83"/>
+<area shape="rect" id="node5" href="$class_navigator.html#ae67397a343ba76d5cd4407983c2e5f22" title="run &#45; function called by main to either map or travel optimalRoute " alt="" coords="604,56,705,83"/>
+</map>

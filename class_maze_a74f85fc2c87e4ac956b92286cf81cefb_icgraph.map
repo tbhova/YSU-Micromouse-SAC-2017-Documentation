@@ -1,0 +1,10 @@
+<map id="Maze::hasMouseVisited" name="Maze::hasMouseVisited">
+<area shape="rect" id="node2" href="$class_maze.html#a3d1c9574c636286d43cf326909a369fc" title="Maze::hasMouseVisited" alt="" coords="216,5,379,32"/>
+<area shape="rect" id="node3" href="$class_maze.html#afc4ab87a6298915e6aba874647b7bd6a" title="setMouseVisited &#45; mark cell x, y as visited by the mouse " alt="" coords="218,56,377,83"/>
+<area shape="rect" id="node5" href="$class_maze.html#a23d1b2c2db0a101f9a615798ad418f95" title="Maze::getDestinationCell" alt="" coords="427,107,593,133"/>
+<area shape="rect" id="node6" href="$class_navigator.html#a9bb044b904a3f63238d336999c5a7017" title="Navigator::Navigator" alt="" coords="653,157,789,184"/>
+<area shape="rect" id="node4" href="$class_maze.html#ac62ccbdbfac4073f1f33ec8a8d6d3ce8" title="Maze::setMouseVisited" alt="" coords="431,5,589,32"/>
+<area shape="rect" id="node9" href="$class_navigator.html#a3b87ee20e803f1c51aa826e3a4bebc46" title="map &#45; updateMaze with wall data from Driver generate direction and path of travel from current cell t..." alt="" coords="667,56,775,83"/>
+<area shape="rect" id="node7" href="$class_navigator.html#aa0556bf5a6706311470ec46a45c3da47" title="Navigator::optimalRoute" alt="" coords="641,107,800,133"/>
+<area shape="rect" id="node8" href="$class_navigator.html#ae67397a343ba76d5cd4407983c2e5f22" title="run &#45; function called by main to either map or travel optimalRoute " alt="" coords="848,81,949,108"/>
+</map>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getneighboringcells',['getNeighboringCells',['../class_maze.html#a19ccd969acb12eaf110264b44dbda74a',1,'Maze']]]
+  ['breadthfirstgps',['BreadthFirstGPS',['../class_breadth_first_g_p_s.html#ac8061fbca0799f6d73a326512541cd4d',1,'BreadthFirstGPS']]]
 ];
